@@ -2,7 +2,7 @@ set term png size 1000,800
 set logscale y
 set xlabel "Number of threads"
 set ylabel "Number of writes/ms"
-set title "Number of writes over time"
+set title "Number of writes/ms per number of threads"
 set grid layerdefault
 set yrange [1:]
 plot 'benchmark-results.data' using 1:3 with lines title 'Direct', \
