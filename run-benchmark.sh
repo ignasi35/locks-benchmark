@@ -2,11 +2,12 @@
 
 # Linux only
 
-vmstat 1 > vmstat.log &
-java -Xloggc:gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution -jar microbenchmarks.jar | tee microbenchmark.log
-
-for job in `jobs -p`
+for NB_THREADS in `seq 100`
 do
-    kill $job
+    vmstat 1 > $NB_THREADS-threads-vmstat.log &
+    java -Xloggc:$NB_THREADS-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution -jar microbenchmarks.jar -t $NB_THREADS | tee $NB_THREADS-threads-microbenchmark.log
+    for job in `jobs -p`
+    do
+        kill $job
+    done
 done
-
