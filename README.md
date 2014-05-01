@@ -1,3 +1,7 @@
+# Disclaimer
+
+As most benchmarks available on the internet, this benchmark may or may not produce valid results, and may be completely flawed. This code is provided as-is, in the hope that it will be useful to the community. 
+
 # Description
 
 This repository contains a benchmark attempt of lock strategies in Java 8.
