@@ -4,5 +4,5 @@ set ylabel "Number of ops/ms"
 set title "Number of AtomicLong ops/ms per number of threads"
 set grid layerdefault
 set yrange [0:]
-plot 'benchmark-results.data' using 1:10 with lines lt rgb 'green' title 'Reads', \
-     'benchmark-results.data' using 1:11 with lines lt rgb 'red' title 'Writes'
+plot 'benchmark-results.data' using 1:18:19 with errorbars lt rgb 'green' title 'Reads', \
+     'benchmark-results.data' using 1:20:21 with errorbars lt rgb 'red' title 'Writes'

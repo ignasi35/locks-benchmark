@@ -4,11 +4,11 @@ set xlabel "Number of threads"
 set ylabel "Number of writes/ms"
 set title "Number of writes/ms per number of threads"
 set grid layerdefault
-set yrange [1:]
-plot 'benchmark-results.data' using 1:3 with lines title 'Direct', \
-     'benchmark-results.data' using 1:5 with lines title 'Volatile', \
-     'benchmark-results.data' using 1:7 with lines title 'Synchronized', \
-     'benchmark-results.data' using 1:9 with lines title 'ReentrantReadWriteLock', \
-     'benchmark-results.data' using 1:11 with lines title 'AtomicLong', \
-     'benchmark-results.data' using 1:13 with lines title 'LongAdder', \
-     'benchmark-results.data' using 1:15 with lines title 'StampedLock'
+#set yrange [1:]
+plot 'benchmark-results.data' using 1:4:5 with errorbars title 'Direct', \
+     'benchmark-results.data' using 1:8:9 with errorbars title 'Volatile', \
+     'benchmark-results.data' using 1:12:13 with errorbars title 'Synchronized', \
+     'benchmark-results.data' using 1:16:17 with errorbars title 'ReentrantReadWriteLock', \
+     'benchmark-results.data' using 1:20:21 with errorbars title 'AtomicLong', \
+     'benchmark-results.data' using 1:24:25 with errorbars title 'LongAdder', \
+     'benchmark-results.data' using 1:28:29 with errorbars title 'StampedLock'
