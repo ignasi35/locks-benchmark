@@ -62,13 +62,7 @@ public class LocksBenchmark {
     private long synchronizedAdder = 0L;
 
     // ReentrantReadWriteLock adder : Guarded by RWLock, valid result
-    @State(Scope.Thread)
-    public static class RWLock {
-        public final ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
-        public final ReentrantReadWriteLock.ReadLock readLock = reentrantReadWriteLock.readLock();
-        public final ReentrantReadWriteLock.WriteLock writeLock = reentrantReadWriteLock.writeLock();
-    }
-
+    public final ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
     private long rwlAdder = 0L;
 
     // AtomicLong adder : Guarded by CAS-ing values, valid result
@@ -130,23 +124,23 @@ public class LocksBenchmark {
 
     @GenerateMicroBenchmark
     @Group("ReentrantReadWriteLock")
-    public long rrwlWrites(RWLock rwLock) {
+    public long rrwlWrites() {
         try {
-            rwLock.writeLock.lock();
+            reentrantReadWriteLock.writeLock().lock();
             return ++rwlAdder;
         } finally {
-            rwLock.writeLock.unlock();
+            reentrantReadWriteLock.writeLock().unlock();
         }
     }
 
     @GenerateMicroBenchmark
     @Group("ReentrantReadWriteLock")
-    public long rrwlReads(RWLock rwLock) {
+    public long rrwlReads() {
         try {
-            rwLock.readLock.lock();
+            reentrantReadWriteLock.readLock().lock();
             return rwlAdder;
         } finally {
-            rwLock.readLock.unlock();
+            reentrantReadWriteLock.readLock().unlock();
         }
     }
 
