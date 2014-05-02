@@ -2,7 +2,7 @@
 
 # Linux only
 
-for NB_THREADS in `seq 100`
+for NB_THREADS in `seq 24`
 do
     vmstat 1 > $NB_THREADS-threads-vmstat.log &
     java -Xloggc:$NB_THREADS-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution -jar microbenchmarks.jar -t $NB_THREADS | tee $NB_THREADS-threads-microbenchmark.log

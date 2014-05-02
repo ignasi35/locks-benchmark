@@ -1,6 +1,6 @@
 #!/bin/sh
 
-for i in `seq 100`
+for i in `seq 24`
 do
     THREAD_DIR=$(printf '%03d-threads' $i)
     DATE=$(date "+%Y-%m-%d")

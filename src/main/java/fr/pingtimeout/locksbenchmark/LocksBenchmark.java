@@ -37,10 +37,13 @@ import org.openjdk.jmh.annotations.Group;
 import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
+import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Threads;
 import org.openjdk.jmh.annotations.Warmup;
+import org.openjdk.jmh.logic.BlackHole;
 
 @BenchmarkMode(Mode.Throughput)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
@@ -52,40 +55,63 @@ import org.openjdk.jmh.annotations.Warmup;
 public class LocksBenchmark {
 
     // Dirty adder : No-guard, invalid result
-    private long dirtyAdder = 0L;
+    private long dirtyAdder;
 
     // Dirty volatile adder : No-guard, invalid result
-    private volatile long dirtyVolatileAdder = 0L;
+    private volatile long dirtyVolatileAdder;
 
     // Synchronized adder : Guarded by object itself, valid result
-    private final Object synchronizedGuard = new Object();
-    private long synchronizedAdder = 0L;
+    private Object synchronizedGuard;
+    private long synchronizedAdder;
 
     // ReentrantReadWriteLock adder : Guarded by RWLock, valid result
-    public final ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
-    private long rwlAdder = 0L;
+    public ReentrantReadWriteLock reentrantReadWriteLock;
+    private long rwlAdder;
 
     // AtomicLong adder : Guarded by CAS-ing values, valid result
-    private AtomicLong atomicLong = new AtomicLong(0);
+    private AtomicLong atomicLong;
 
     // LongAdder : Guarded by CAS-ing values, valid result
-    private LongAdder longAdder = new LongAdder();
+    private LongAdder longAdder;
 
-    private final StampedLock stampedLock = new StampedLock();
-    private long stampedAdder = 0L;
+    private StampedLock stampedLock;
+    private long stampedAdder;
+
+    //------------------------------------------------------------------------
+
+    @Param({"1024"})
+    private int consumedCPU;
+
+    @Setup
+    public void init() {
+        dirtyAdder = 0L;
+        dirtyVolatileAdder = 0L;
+        synchronizedGuard = new Object();
+        synchronizedAdder = 0L;
+        reentrantReadWriteLock = new ReentrantReadWriteLock();
+        rwlAdder = 0L;
+        atomicLong = new AtomicLong(0);
+        longAdder = new LongAdder();
+        stampedLock = new StampedLock();
+        stampedAdder = 0L;
+    }
 
     //------------------------------------------------------------------------
 
     @GenerateMicroBenchmark
     @Group("Dirty")
     public long dWrites() {
-        return ++dirtyAdder;
+        long value = ++dirtyAdder;
+        BlackHole.consumeCPU(consumedCPU);
+        return value;
     }
 
     @GenerateMicroBenchmark
     @Group("Dirty")
     public long dReads() {
-        return dirtyAdder;
+        long value = dirtyAdder;
+        BlackHole.consumeCPU(consumedCPU);
+        return value;
     }
 
     //------------------------------------------------------------------------
@@ -93,13 +119,17 @@ public class LocksBenchmark {
     @GenerateMicroBenchmark
     @Group("DirtyVolatile")
     public long dvWrites() {
-        return ++dirtyVolatileAdder;
+        long value = ++dirtyVolatileAdder;
+        BlackHole.consumeCPU(consumedCPU);
+        return value;
     }
 
     @GenerateMicroBenchmark
     @Group("DirtyVolatile")
     public long dvReads() {
-        return dirtyVolatileAdder;
+        long value = dirtyVolatileAdder;
+        BlackHole.consumeCPU(consumedCPU);
+        return value;
     }
 
     //------------------------------------------------------------------------
@@ -108,7 +138,9 @@ public class LocksBenchmark {
     @Group("Synchronized")
     public long syWrites() {
         synchronized (synchronizedGuard) {
-            return ++synchronizedAdder;
+            long value = ++synchronizedAdder;
+            BlackHole.consumeCPU(consumedCPU);
+            return value;
         }
     }
 
@@ -116,7 +148,9 @@ public class LocksBenchmark {
     @Group("Synchronized")
     public long syReads() {
         synchronized (synchronizedGuard) {
-            return synchronizedAdder;
+            long value = synchronizedAdder;
+            BlackHole.consumeCPU(consumedCPU);
+            return value;
         }
     }
 
@@ -127,7 +161,9 @@ public class LocksBenchmark {
     public long rrwlWrites() {
         try {
             reentrantReadWriteLock.writeLock().lock();
-            return ++rwlAdder;
+            long value = ++rwlAdder;
+            BlackHole.consumeCPU(consumedCPU);
+            return value;
         } finally {
             reentrantReadWriteLock.writeLock().unlock();
         }
@@ -138,7 +174,9 @@ public class LocksBenchmark {
     public long rrwlReads() {
         try {
             reentrantReadWriteLock.readLock().lock();
-            return rwlAdder;
+            long value = rwlAdder;
+            BlackHole.consumeCPU(consumedCPU);
+            return value;
         } finally {
             reentrantReadWriteLock.readLock().unlock();
         }
@@ -149,13 +187,17 @@ public class LocksBenchmark {
     @GenerateMicroBenchmark
     @Group("Atomic")
     public long atWrites() {
-        return atomicLong.incrementAndGet();
+        long value = atomicLong.incrementAndGet();
+        BlackHole.consumeCPU(consumedCPU);
+        return value;
     }
 
     @GenerateMicroBenchmark
     @Group("Atomic")
     public long atReads() {
-        return atomicLong.get();
+        long value = atomicLong.get();
+        BlackHole.consumeCPU(consumedCPU);
+        return value;
     }
 
     //------------------------------------------------------------------------
@@ -164,12 +206,15 @@ public class LocksBenchmark {
     @Group("Adder")
     public void adWrites() {
         longAdder.increment();
+        BlackHole.consumeCPU(consumedCPU);
     }
 
     @GenerateMicroBenchmark
     @Group("Adder")
     public long adReads() {
-        return longAdder.sum();
+        long value = longAdder.sum();
+        BlackHole.consumeCPU(consumedCPU);
+        return value;
     }
 
     //------------------------------------------------------------------------
@@ -185,6 +230,7 @@ public class LocksBenchmark {
         try {
             oldValue = stampedAdder;
             newValue = oldValue + 1;
+            BlackHole.consumeCPU(consumedCPU);
 
             long writeStamp = stampedLock.tryConvertToWriteLock(stamp);
             if (writeStamp == 0L) {
@@ -192,6 +238,7 @@ public class LocksBenchmark {
                 stamp = stampedLock.writeLock();
                 oldValue = stampedAdder;
                 newValue = oldValue + 1;
+                BlackHole.consumeCPU(consumedCPU);
                 stampedAdder = newValue;
             } else {
                 stamp = writeStamp;
@@ -211,10 +258,13 @@ public class LocksBenchmark {
 
         stamp = stampedLock.tryOptimisticRead();
         currentAdder = stampedAdder;
+        BlackHole.consumeCPU(consumedCPU);
+
         if (!stampedLock.validate(stamp)) {
             stamp = stampedLock.readLock();
             try {
                 currentAdder = stampedAdder;
+                BlackHole.consumeCPU(consumedCPU);
             } finally {
                 stampedLock.unlockRead(stamp);
             }
