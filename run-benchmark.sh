@@ -2,12 +2,26 @@
 
 # Linux only
 
-for NB_THREADS in `seq 24`
+for NB_WRITERS_PER_READER in `seq 2 23`
 do
-    vmstat 1 > $NB_THREADS-threads-vmstat.log &
-    java -Xloggc:$NB_THREADS-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution -jar microbenchmarks.jar -t $NB_THREADS | tee $NB_THREADS-threads-microbenchmark.log
-    for job in `jobs -p`
+    # NB_WRITERS_PER_READER : 2 3 ... 23
+    MIN_THREADS=$(($NB_WRITERS_PER_READER + 1))
+
+    # MIN_THREADS : 3 4 ... 24
+    for NB_THREADS in `seq $MIN_THREADS $MIN_THREADS 24`
     do
-        kill $job
+        # NB_THREADS : 3 -> 3 6 ... 24 ; 4 -> 4 8 ... 24 ; 5 -> 5 10 ... 20
+        TG="-tg 1,$NB_WRITERS_PER_READER"
+        T="-t $NB_THREADS"
+        PREFIX="$NB_WRITERS_PER_READER-writers-per-reader-$NB_THREADS-threads"
+        GC="-Xloggc:$PREFIX-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution"
+
+        vmstat 1 > $PREFIX-vmstat.log &
+        java -jar microbenchmarks.jar -e 'fr.pingtimeout.locksbenchmark.LocksBenchmark.*' $TG $T | tee $PREFIX-microbenchmark.log
+        for job in `jobs -p`
+        do
+            kill $job
+        done
     done
 done
+
