@@ -11,9 +11,12 @@ echo -n "adder-reads adder-reads-mean-error adder-writes adder-writes-mean-error
 echo -n "stamped-reads stamped-reads-mean-error stamped-writes stamped-writes-mean-error "
 echo ""
 
-for i in `seq $1`
+for WRITERS_PER_READER in `seq 2 23`
 do
-    RESULTS_DIRECTORY=`printf '%03d-threads' $i`
+    NB_THREADS=$((WRITERS_PER_READER + 1))
+    RESULTS_DIRECTORY="$WRITERS_PER_READER-writers-per-reader-$NB_THREADS-threads"
+
+    echo $RESULTS_DIRECTORY
 
     DIRTY_READ=`grep f.p.l.LocksBenchmark.Dirty:dReads ${RESULTS_DIRECTORY}/microbenchmark.log | awk '{print $5 " " $6}'`
     DIRTY_WRITE=`grep f.p.l.LocksBenchmark.Dirty:dWrites ${RESULTS_DIRECTORY}/microbenchmark.log | awk '{print $5 " " $6}'`
@@ -31,7 +34,7 @@ do
     STAMPED_READ=`grep f.p.l.LocksBenchmark.Stamped:stReads ${RESULTS_DIRECTORY}/microbenchmark.log | awk '{print $5 " " $6}'`
     STAMPED_WRITE=`grep f.p.l.LocksBenchmark.Stamped:stWrites ${RESULTS_DIRECTORY}/microbenchmark.log | awk '{print $5 " " $6}'`
 
-    echo -n "${i} "
+    echo -n "${NB_THREADS} "
     echo -n "${DIRTY_READ} ${DIRTY_WRITE} "
     echo -n "${DIRTY_VOLATILE_READ} ${DIRTY_VOLATILE_WRITE} "
     echo -n "${SYNCHRONIZED_READ} ${SYNCHRONIZED_WRITE} "

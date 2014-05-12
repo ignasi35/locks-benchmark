@@ -10,7 +10,7 @@ mkdir -p results/images/
 
 cd results/
 
-for graphtype in dirty volatile synchronized reentrant-read-write-lock atomic adder stamped-lock reads writes
+for graphtype in dirty volatile synchronized reentrant-read-write-lock atomic adder stamped-lock reads writes reads-clean writes-clean
 do
   gnuplot ../../$graphtype.gnuplot > images/$graphtype.png
 done

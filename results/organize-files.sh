@@ -1,14 +1,14 @@
 #!/bin/sh
 
-for i in `seq 24`
+for d in `ls *.log | perl -pe 's/(-vmstat|-gc|-microbenchmark).log//' | sort | uniq`
 do
-    THREAD_DIR=$(printf '%03d-threads' $i)
+    RUN_DIR=$d
     DATE=$(date "+%Y-%m-%d")
-    TARGET_DIR="$DATE/$THREAD_DIR"
+    TARGET_DIR="$DATE/$RUN_DIR"
 
     mkdir -p $TARGET_DIR
-    mv ${i}-threads-gc.log $TARGET_DIR/gc.log
-    mv ${i}-threads-vmstat.log $TARGET_DIR/vmstat.log
-    mv ${i}-threads-microbenchmark.log $TARGET_DIR/microbenchmark.log
+    mv ${d}-gc.log $TARGET_DIR/gc.log
+    mv ${d}-vmstat.log $TARGET_DIR/vmstat.log
+    mv ${d}-microbenchmark.log $TARGET_DIR/microbenchmark.log
 done
 
