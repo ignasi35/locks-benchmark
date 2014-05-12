@@ -5,10 +5,10 @@ set ylabel "Number of reads/ms"
 set title "Number of reads/ms per number of threads"
 set grid layerdefault
 #set yrange [1:]
-plot 'benchmark-results.data' using 1:2:3 with errorbars title 'Direct', \
-     'benchmark-results.data' using 1:6:7 with errorbars title 'Volatile', \
-     'benchmark-results.data' using 1:10:11 with errorbars title 'Synchronized', \
-     'benchmark-results.data' using 1:14:15 with errorbars title 'ReentrantReadWriteLock', \
-     'benchmark-results.data' using 1:18:19 with errorbars title 'AtomicLong', \
-     'benchmark-results.data' using 1:22:23 with errorbars title 'LongAdder', \
-     'benchmark-results.data' using 1:26:27 with errorbars title 'StampedLock'
+plot 'benchmark-results.data' using 1:2:3 with errorbars title 'Direct' lt rgb '#DC143C', \
+     'benchmark-results.data' using 1:6:7 with errorbars title 'Volatile' lt rgb '#A52A2A', \
+     'benchmark-results.data' using 1:10:11 with errorbars title 'Synchronized' lt rgb '#00CC00', \
+     'benchmark-results.data' using 1:14:15 with errorbars title 'ReentrantReadWriteLock' lt rgb '#CCCC00', \
+     'benchmark-results.data' using 1:18:19 with errorbars title 'AtomicLong' lt rgb '#CC00CC', \
+     'benchmark-results.data' using 1:22:23 with errorbars title 'LongAdder' lt rgb '#0000CC', \
+     'benchmark-results.data' using 1:26:27 with errorbars title 'StampedLock' lt rgb '#00CCCC'
