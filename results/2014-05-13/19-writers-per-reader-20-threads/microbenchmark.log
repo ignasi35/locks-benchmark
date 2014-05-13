@@ -1,0 +1,2612 @@
+# Run progress: 0,00% complete, ETA 00:35:00
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 1 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Adder
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 79277,307 ops/ms
+# Warmup Iteration   2: 85909,852 ops/ms
+# Warmup Iteration   3: 88375,651 ops/ms
+# Warmup Iteration   4: 83152,486 ops/ms
+# Warmup Iteration   5: 83429,942 ops/ms
+# Warmup Iteration   6: 87090,113 ops/ms
+# Warmup Iteration   7: 84206,564 ops/ms
+# Warmup Iteration   8: 84329,495 ops/ms
+# Warmup Iteration   9: 80875,822 ops/ms
+# Warmup Iteration  10: 84730,950 ops/ms
+Iteration   1: 82674,709 ops/ms
+                 "adReads": 1129,385 ops/ms (1 threads)
+                 "adWrites": 81545,325 ops/ms (19 threads)
+
+Iteration   2: 80741,032 ops/ms
+                 "adReads": 1100,834 ops/ms (1 threads)
+                 "adWrites": 79640,198 ops/ms (19 threads)
+
+Iteration   3: 74655,648 ops/ms
+                 "adReads": 934,633 ops/ms (1 threads)
+                 "adWrites": 73721,015 ops/ms (19 threads)
+
+Iteration   4: 80807,483 ops/ms
+                 "adReads": 1261,662 ops/ms (1 threads)
+                 "adWrites": 79545,821 ops/ms (19 threads)
+
+Iteration   5: 78499,854 ops/ms
+                 "adReads": 980,626 ops/ms (1 threads)
+                 "adWrites": 77519,228 ops/ms (19 threads)
+
+Iteration   6: 85737,430 ops/ms
+                 "adReads": 1210,687 ops/ms (1 threads)
+                 "adWrites": 84526,743 ops/ms (19 threads)
+
+Iteration   7: 66522,085 ops/ms
+                 "adReads": 853,960 ops/ms (1 threads)
+                 "adWrites": 65668,125 ops/ms (19 threads)
+
+Iteration   8: 76070,808 ops/ms
+                 "adReads": 1001,180 ops/ms (1 threads)
+                 "adWrites": 75069,628 ops/ms (19 threads)
+
+Iteration   9: 86805,599 ops/ms
+                 "adReads": 1332,498 ops/ms (1 threads)
+                 "adWrites": 85473,102 ops/ms (19 threads)
+
+Iteration  10: 77659,303 ops/ms
+                 "adReads": 1066,192 ops/ms (1 threads)
+                 "adWrites": 76593,111 ops/ms (19 threads)
+
+
+Result : 79017,395 ±(99.9%) 8891,848 ops/ms
+  Statistics: (min, avg, max) = (66522,085, 79017,395, 86805,599), stdev = 5881,407
+  Confidence interval (99.9%): [70125,547, 87909,243]
+
+Result "adReads": 1087,166 ±(99.9%) 228,006 ops/ms
+  Statistics: (min, avg, max) = (853,960, 1087,166, 1332,498), stdev = 150,812
+  Confidence interval (99.9%): [859,159, 1315,172]
+
+Result "adWrites": 77930,230 ±(99.9%) 8688,299 ops/ms
+  Statistics: (min, avg, max) = (65668,125, 77930,230, 85473,102), stdev = 5746,772
+  Confidence interval (99.9%): [69241,931, 86618,529]
+
+
+# Run progress: 2,86% complete, ETA 00:36:40
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 2 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Adder
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 78894,305 ops/ms
+# Warmup Iteration   2: 83476,221 ops/ms
+# Warmup Iteration   3: 87204,585 ops/ms
+# Warmup Iteration   4: 87816,406 ops/ms
+# Warmup Iteration   5: 81371,479 ops/ms
+# Warmup Iteration   6: 87079,524 ops/ms
+# Warmup Iteration   7: 76093,964 ops/ms
+# Warmup Iteration   8: 31711,416 ops/ms
+# Warmup Iteration   9: 35919,226 ops/ms
+# Warmup Iteration  10: 25894,066 ops/ms
+Iteration   1: 30249,379 ops/ms
+                 "adReads": 689,590 ops/ms (1 threads)
+                 "adWrites": 29559,789 ops/ms (19 threads)
+
+Iteration   2: 43964,757 ops/ms
+                 "adReads": 775,430 ops/ms (1 threads)
+                 "adWrites": 43189,327 ops/ms (19 threads)
+
+Iteration   3: 34833,853 ops/ms
+                 "adReads": 740,635 ops/ms (1 threads)
+                 "adWrites": 34093,217 ops/ms (19 threads)
+
+Iteration   4: 29266,828 ops/ms
+                 "adReads": 627,193 ops/ms (1 threads)
+                 "adWrites": 28639,636 ops/ms (19 threads)
+
+Iteration   5: 37101,719 ops/ms
+                 "adReads": 734,314 ops/ms (1 threads)
+                 "adWrites": 36367,405 ops/ms (19 threads)
+
+Iteration   6: 34499,500 ops/ms
+                 "adReads": 656,290 ops/ms (1 threads)
+                 "adWrites": 33843,210 ops/ms (19 threads)
+
+Iteration   7: 25251,662 ops/ms
+                 "adReads": 571,154 ops/ms (1 threads)
+                 "adWrites": 24680,508 ops/ms (19 threads)
+
+Iteration   8: 48426,664 ops/ms
+                 "adReads": 918,359 ops/ms (1 threads)
+                 "adWrites": 47508,305 ops/ms (19 threads)
+
+Iteration   9: 45275,799 ops/ms
+                 "adReads": 850,288 ops/ms (1 threads)
+                 "adWrites": 44425,510 ops/ms (19 threads)
+
+Iteration  10: 42217,129 ops/ms
+                 "adReads": 819,926 ops/ms (1 threads)
+                 "adWrites": 41397,204 ops/ms (19 threads)
+
+
+Result : 37108,729 ±(99.9%) 11591,091 ops/ms
+  Statistics: (min, avg, max) = (25251,662, 37108,729, 48426,664), stdev = 7666,789
+  Confidence interval (99.9%): [25517,638, 48699,820]
+
+Result "adReads": 738,318 ±(99.9%) 161,270 ops/ms
+  Statistics: (min, avg, max) = (571,154, 738,318, 918,359), stdev = 106,670
+  Confidence interval (99.9%): [577,048, 899,588]
+
+Result "adWrites": 36370,411 ±(99.9%) 11437,380 ops/ms
+  Statistics: (min, avg, max) = (24680,508, 36370,411, 47508,305), stdev = 7565,119
+  Confidence interval (99.9%): [24933,031, 47807,791]
+
+
+# Run progress: 5,71% complete, ETA 00:35:32
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 3 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Adder
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 73067,711 ops/ms
+# Warmup Iteration   2: 86432,052 ops/ms
+# Warmup Iteration   3: 85164,680 ops/ms
+# Warmup Iteration   4: 83926,707 ops/ms
+# Warmup Iteration   5: 85605,032 ops/ms
+# Warmup Iteration   6: 87019,637 ops/ms
+# Warmup Iteration   7: 75548,441 ops/ms
+# Warmup Iteration   8: 61530,843 ops/ms
+# Warmup Iteration   9: 82649,052 ops/ms
+# Warmup Iteration  10: 79562,128 ops/ms
+Iteration   1: 61605,497 ops/ms
+                 "adReads": 1049,129 ops/ms (1 threads)
+                 "adWrites": 60556,368 ops/ms (19 threads)
+
+Iteration   2: 70754,697 ops/ms
+                 "adReads": 1179,576 ops/ms (1 threads)
+                 "adWrites": 69575,121 ops/ms (19 threads)
+
+Iteration   3: 79427,590 ops/ms
+                 "adReads": 1190,867 ops/ms (1 threads)
+                 "adWrites": 78236,723 ops/ms (19 threads)
+
+Iteration   4: 60817,995 ops/ms
+                 "adReads": 1053,279 ops/ms (1 threads)
+                 "adWrites": 59764,715 ops/ms (19 threads)
+
+Iteration   5: 73170,460 ops/ms
+                 "adReads": 1120,025 ops/ms (1 threads)
+                 "adWrites": 72050,436 ops/ms (19 threads)
+
+Iteration   6: 73170,813 ops/ms
+                 "adReads": 1046,530 ops/ms (1 threads)
+                 "adWrites": 72124,283 ops/ms (19 threads)
+
+Iteration   7: 70095,465 ops/ms
+                 "adReads": 1033,418 ops/ms (1 threads)
+                 "adWrites": 69062,047 ops/ms (19 threads)
+
+Iteration   8: 84219,844 ops/ms
+                 "adReads": 1142,751 ops/ms (1 threads)
+                 "adWrites": 83077,093 ops/ms (19 threads)
+
+Iteration   9: 74258,604 ops/ms
+                 "adReads": 1197,076 ops/ms (1 threads)
+                 "adWrites": 73061,528 ops/ms (19 threads)
+
+Iteration  10: 69848,056 ops/ms
+                 "adReads": 1075,896 ops/ms (1 threads)
+                 "adWrites": 68772,160 ops/ms (19 threads)
+
+
+Result : 71736,902 ±(99.9%) 10744,183 ops/ms
+  Statistics: (min, avg, max) = (60817,995, 71736,902, 84219,844), stdev = 7106,612
+  Confidence interval (99.9%): [60992,719, 82481,085]
+
+Result "adReads": 1108,855 ±(99.9%) 98,369 ops/ms
+  Statistics: (min, avg, max) = (1033,418, 1108,855, 1197,076), stdev = 65,065
+  Confidence interval (99.9%): [1010,485, 1207,224]
+
+Result "adWrites": 70628,047 ±(99.9%) 10684,629 ops/ms
+  Statistics: (min, avg, max) = (59764,715, 70628,047, 83077,093), stdev = 7067,221
+  Confidence interval (99.9%): [59943,418, 81312,676]
+
+
+# Run progress: 8,57% complete, ETA 00:34:26
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 4 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Adder
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 76348,052 ops/ms
+# Warmup Iteration   2: 79049,979 ops/ms
+# Warmup Iteration   3: 90496,466 ops/ms
+# Warmup Iteration   4: 88533,406 ops/ms
+# Warmup Iteration   5: 91262,658 ops/ms
+# Warmup Iteration   6: 90588,513 ops/ms
+# Warmup Iteration   7: 56279,317 ops/ms
+# Warmup Iteration   8: 61069,784 ops/ms
+# Warmup Iteration   9: 56139,855 ops/ms
+# Warmup Iteration  10: 49945,620 ops/ms
+Iteration   1: 58110,063 ops/ms
+                 "adReads": 743,058 ops/ms (1 threads)
+                 "adWrites": 57367,006 ops/ms (19 threads)
+
+Iteration   2: 58607,342 ops/ms
+                 "adReads": 705,116 ops/ms (1 threads)
+                 "adWrites": 57902,227 ops/ms (19 threads)
+
+Iteration   3: 67815,826 ops/ms
+                 "adReads": 891,615 ops/ms (1 threads)
+                 "adWrites": 66924,211 ops/ms (19 threads)
+
+Iteration   4: 58046,033 ops/ms
+                 "adReads": 800,483 ops/ms (1 threads)
+                 "adWrites": 57245,550 ops/ms (19 threads)
+
+Iteration   5: 63467,088 ops/ms
+                 "adReads": 801,202 ops/ms (1 threads)
+                 "adWrites": 62665,886 ops/ms (19 threads)
+
+Iteration   6: 57399,247 ops/ms
+                 "adReads": 745,665 ops/ms (1 threads)
+                 "adWrites": 56653,582 ops/ms (19 threads)
+
+Iteration   7: 49500,706 ops/ms
+                 "adReads": 622,038 ops/ms (1 threads)
+                 "adWrites": 48878,668 ops/ms (19 threads)
+
+Iteration   8: 57755,322 ops/ms
+                 "adReads": 793,205 ops/ms (1 threads)
+                 "adWrites": 56962,117 ops/ms (19 threads)
+
+Iteration   9: 45293,431 ops/ms
+                 "adReads": 577,144 ops/ms (1 threads)
+                 "adWrites": 44716,287 ops/ms (19 threads)
+
+Iteration  10: 53492,636 ops/ms
+                 "adReads": 702,910 ops/ms (1 threads)
+                 "adWrites": 52789,726 ops/ms (19 threads)
+
+
+Result : 56948,769 ±(99.9%) 9693,767 ops/ms
+  Statistics: (min, avg, max) = (45293,431, 56948,769, 67815,826), stdev = 6411,827
+  Confidence interval (99.9%): [47255,002, 66642,537]
+
+Result "adReads": 738,243 ±(99.9%) 139,169 ops/ms
+  Statistics: (min, avg, max) = (577,144, 738,243, 891,615), stdev = 92,052
+  Confidence interval (99.9%): [599,074, 877,413]
+
+Result "adWrites": 56210,526 ±(99.9%) 9562,649 ops/ms
+  Statistics: (min, avg, max) = (44716,287, 56210,526, 66924,211), stdev = 6325,100
+  Confidence interval (99.9%): [46647,877, 65773,175]
+
+
+# Run progress: 11,43% complete, ETA 00:33:21
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 5 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Adder
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 78881,835 ops/ms
+# Warmup Iteration   2: 85197,985 ops/ms
+# Warmup Iteration   3: 89410,131 ops/ms
+# Warmup Iteration   4: 88880,798 ops/ms
+# Warmup Iteration   5: 89976,825 ops/ms
+# Warmup Iteration   6: 81453,447 ops/ms
+# Warmup Iteration   7: 82687,331 ops/ms
+# Warmup Iteration   8: 89734,655 ops/ms
+# Warmup Iteration   9: 71873,643 ops/ms
+# Warmup Iteration  10: 77149,928 ops/ms
+Iteration   1: 80846,569 ops/ms
+                 "adReads": 1092,366 ops/ms (1 threads)
+                 "adWrites": 79754,203 ops/ms (19 threads)
+
+Iteration   2: 90018,816 ops/ms
+                 "adReads": 1365,286 ops/ms (1 threads)
+                 "adWrites": 88653,530 ops/ms (19 threads)
+
+Iteration   3: 88761,687 ops/ms
+                 "adReads": 1245,068 ops/ms (1 threads)
+                 "adWrites": 87516,619 ops/ms (19 threads)
+
+Iteration   4: 86301,893 ops/ms
+                 "adReads": 1272,693 ops/ms (1 threads)
+                 "adWrites": 85029,200 ops/ms (19 threads)
+
+Iteration   5: 84906,170 ops/ms
+                 "adReads": 1135,098 ops/ms (1 threads)
+                 "adWrites": 83771,072 ops/ms (19 threads)
+
+Iteration   6: 74964,137 ops/ms
+                 "adReads": 1188,056 ops/ms (1 threads)
+                 "adWrites": 73776,082 ops/ms (19 threads)
+
+Iteration   7: 89637,378 ops/ms
+                 "adReads": 1262,722 ops/ms (1 threads)
+                 "adWrites": 88374,656 ops/ms (19 threads)
+
+Iteration   8: 68664,861 ops/ms
+                 "adReads": 1080,862 ops/ms (1 threads)
+                 "adWrites": 67583,999 ops/ms (19 threads)
+
+Iteration   9: 79571,089 ops/ms
+                 "adReads": 1094,994 ops/ms (1 threads)
+                 "adWrites": 78476,095 ops/ms (19 threads)
+
+Iteration  10: 88886,746 ops/ms
+                 "adReads": 1282,120 ops/ms (1 threads)
+                 "adWrites": 87604,626 ops/ms (19 threads)
+
+
+Result : 83255,934 ±(99.9%) 10826,375 ops/ms
+  Statistics: (min, avg, max) = (68664,861, 83255,934, 90018,816), stdev = 7160,977
+  Confidence interval (99.9%): [72429,559, 94082,310]
+
+Result "adReads": 1201,926 ±(99.9%) 148,162 ops/ms
+  Statistics: (min, avg, max) = (1080,862, 1201,926, 1365,286), stdev = 98,000
+  Confidence interval (99.9%): [1053,765, 1350,088]
+
+Result "adWrites": 82054,008 ±(99.9%) 10713,579 ops/ms
+  Statistics: (min, avg, max) = (67583,999, 82054,008, 88653,530), stdev = 7086,369
+  Confidence interval (99.9%): [71340,430, 92767,587]
+
+
+# Run progress: 14,29% complete, ETA 00:32:16
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 1 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Atomic
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 12757,408 ops/ms
+# Warmup Iteration   2: 13687,673 ops/ms
+# Warmup Iteration   3: 13505,288 ops/ms
+# Warmup Iteration   4: 12584,475 ops/ms
+# Warmup Iteration   5: 13750,278 ops/ms
+# Warmup Iteration   6: 13586,688 ops/ms
+# Warmup Iteration   7: 13743,217 ops/ms
+# Warmup Iteration   8: 13857,479 ops/ms
+# Warmup Iteration   9: 13543,236 ops/ms
+# Warmup Iteration  10: 13537,062 ops/ms
+Iteration   1: 14410,369 ops/ms
+                 "atReads": 1116,726 ops/ms (1 threads)
+                 "atWrites": 13293,642 ops/ms (19 threads)
+
+Iteration   2: 13848,845 ops/ms
+                 "atReads": 831,675 ops/ms (1 threads)
+                 "atWrites": 13017,170 ops/ms (19 threads)
+
+Iteration   3: 13914,565 ops/ms
+                 "atReads": 780,438 ops/ms (1 threads)
+                 "atWrites": 13134,127 ops/ms (19 threads)
+
+Iteration   4: 12709,894 ops/ms
+                 "atReads": 712,085 ops/ms (1 threads)
+                 "atWrites": 11997,809 ops/ms (19 threads)
+
+Iteration   5: 13881,208 ops/ms
+                 "atReads": 782,134 ops/ms (1 threads)
+                 "atWrites": 13099,074 ops/ms (19 threads)
+
+Iteration   6: 13608,280 ops/ms
+                 "atReads": 838,432 ops/ms (1 threads)
+                 "atWrites": 12769,848 ops/ms (19 threads)
+
+Iteration   7: 14151,788 ops/ms
+                 "atReads": 905,449 ops/ms (1 threads)
+                 "atWrites": 13246,339 ops/ms (19 threads)
+
+Iteration   8: 13870,638 ops/ms
+                 "atReads": 792,467 ops/ms (1 threads)
+                 "atWrites": 13078,171 ops/ms (19 threads)
+
+Iteration   9: 13286,389 ops/ms
+                 "atReads": 1035,862 ops/ms (1 threads)
+                 "atWrites": 12250,527 ops/ms (19 threads)
+
+Iteration  10: 14345,471 ops/ms
+                 "atReads": 1025,699 ops/ms (1 threads)
+                 "atWrites": 13319,772 ops/ms (19 threads)
+
+
+Result : 13802,745 ±(99.9%) 765,900 ops/ms
+  Statistics: (min, avg, max) = (12709,894, 13802,745, 14410,369), stdev = 506,595
+  Confidence interval (99.9%): [13036,845, 14568,644]
+
+Result "atReads": 882,097 ±(99.9%) 202,571 ops/ms
+  Statistics: (min, avg, max) = (712,085, 882,097, 1116,726), stdev = 133,988
+  Confidence interval (99.9%): [679,526, 1084,668]
+
+Result "atWrites": 12920,648 ±(99.9%) 683,496 ops/ms
+  Statistics: (min, avg, max) = (11997,809, 12920,648, 13319,772), stdev = 452,091
+  Confidence interval (99.9%): [12237,151, 13604,144]
+
+
+# Run progress: 17,14% complete, ETA 00:31:12
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 2 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Atomic
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 11489,120 ops/ms
+# Warmup Iteration   2: 13779,256 ops/ms
+# Warmup Iteration   3: 13921,181 ops/ms
+# Warmup Iteration   4: 13658,251 ops/ms
+# Warmup Iteration   5: 13856,563 ops/ms
+# Warmup Iteration   6: 14221,858 ops/ms
+# Warmup Iteration   7: 14305,554 ops/ms
+# Warmup Iteration   8: 14154,712 ops/ms
+# Warmup Iteration   9: 13988,208 ops/ms
+# Warmup Iteration  10: 13798,719 ops/ms
+Iteration   1: 12523,473 ops/ms
+                 "atReads": 695,168 ops/ms (1 threads)
+                 "atWrites": 11828,305 ops/ms (19 threads)
+
+Iteration   2: 14043,238 ops/ms
+                 "atReads": 1151,980 ops/ms (1 threads)
+                 "atWrites": 12891,258 ops/ms (19 threads)
+
+Iteration   3: 13907,606 ops/ms
+                 "atReads": 851,613 ops/ms (1 threads)
+                 "atWrites": 13055,993 ops/ms (19 threads)
+
+Iteration   4: 14204,702 ops/ms
+                 "atReads": 1033,470 ops/ms (1 threads)
+                 "atWrites": 13171,232 ops/ms (19 threads)
+
+Iteration   5: 13881,298 ops/ms
+                 "atReads": 790,225 ops/ms (1 threads)
+                 "atWrites": 13091,073 ops/ms (19 threads)
+
+Iteration   6: 13852,619 ops/ms
+                 "atReads": 793,475 ops/ms (1 threads)
+                 "atWrites": 13059,145 ops/ms (19 threads)
+
+Iteration   7: 13731,469 ops/ms
+                 "atReads": 765,936 ops/ms (1 threads)
+                 "atWrites": 12965,533 ops/ms (19 threads)
+
+Iteration   8: 13866,942 ops/ms
+                 "atReads": 796,276 ops/ms (1 threads)
+                 "atWrites": 13070,666 ops/ms (19 threads)
+
+Iteration   9: 14096,102 ops/ms
+                 "atReads": 973,073 ops/ms (1 threads)
+                 "atWrites": 13123,029 ops/ms (19 threads)
+
+Iteration  10: 13899,578 ops/ms
+                 "atReads": 785,946 ops/ms (1 threads)
+                 "atWrites": 13113,631 ops/ms (19 threads)
+
+
+Result : 13800,703 ±(99.9%) 709,158 ops/ms
+  Statistics: (min, avg, max) = (12523,473, 13800,703, 14204,702), stdev = 469,064
+  Confidence interval (99.9%): [13091,544, 14509,861]
+
+Result "atReads": 863,716 ±(99.9%) 215,535 ops/ms
+  Statistics: (min, avg, max) = (695,168, 863,716, 1151,980), stdev = 142,563
+  Confidence interval (99.9%): [648,181, 1079,252]
+
+Result "atWrites": 12936,986 ±(99.9%) 601,261 ops/ms
+  Statistics: (min, avg, max) = (11828,305, 12936,986, 13171,232), stdev = 397,697
+  Confidence interval (99.9%): [12335,726, 13538,247]
+
+
+# Run progress: 20,00% complete, ETA 00:30:07
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 3 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Atomic
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 11811,708 ops/ms
+# Warmup Iteration   2: 14018,547 ops/ms
+# Warmup Iteration   3: 13696,504 ops/ms
+# Warmup Iteration   4: 14577,469 ops/ms
+# Warmup Iteration   5: 14331,741 ops/ms
+# Warmup Iteration   6: 12434,442 ops/ms
+# Warmup Iteration   7: 13586,258 ops/ms
+# Warmup Iteration   8: 13828,803 ops/ms
+# Warmup Iteration   9: 13926,023 ops/ms
+# Warmup Iteration  10: 13387,723 ops/ms
+Iteration   1: 12530,365 ops/ms
+                 "atReads": 869,672 ops/ms (1 threads)
+                 "atWrites": 11660,693 ops/ms (19 threads)
+
+Iteration   2: 13871,494 ops/ms
+                 "atReads": 783,456 ops/ms (1 threads)
+                 "atWrites": 13088,038 ops/ms (19 threads)
+
+Iteration   3: 13438,175 ops/ms
+                 "atReads": 745,440 ops/ms (1 threads)
+                 "atWrites": 12692,735 ops/ms (19 threads)
+
+Iteration   4: 13516,546 ops/ms
+                 "atReads": 743,399 ops/ms (1 threads)
+                 "atWrites": 12773,146 ops/ms (19 threads)
+
+Iteration   5: 14047,005 ops/ms
+                 "atReads": 1000,680 ops/ms (1 threads)
+                 "atWrites": 13046,325 ops/ms (19 threads)
+
+Iteration   6: 12904,834 ops/ms
+                 "atReads": 752,439 ops/ms (1 threads)
+                 "atWrites": 12152,395 ops/ms (19 threads)
+
+Iteration   7: 13325,930 ops/ms
+                 "atReads": 767,216 ops/ms (1 threads)
+                 "atWrites": 12558,713 ops/ms (19 threads)
+
+Iteration   8: 13502,172 ops/ms
+                 "atReads": 731,496 ops/ms (1 threads)
+                 "atWrites": 12770,676 ops/ms (19 threads)
+
+Iteration   9: 13401,812 ops/ms
+                 "atReads": 768,653 ops/ms (1 threads)
+                 "atWrites": 12633,159 ops/ms (19 threads)
+
+Iteration  10: 13555,030 ops/ms
+                 "atReads": 793,488 ops/ms (1 threads)
+                 "atWrites": 12761,543 ops/ms (19 threads)
+
+
+Result : 13409,336 ±(99.9%) 656,399 ops/ms
+  Statistics: (min, avg, max) = (12530,365, 13409,336, 14047,005), stdev = 434,167
+  Confidence interval (99.9%): [12752,938, 14065,735]
+
+Result "atReads": 795,594 ±(99.9%) 123,896 ops/ms
+  Statistics: (min, avg, max) = (731,496, 795,594, 1000,680), stdev = 81,949
+  Confidence interval (99.9%): [671,698, 919,490]
+
+Result "atWrites": 12613,742 ±(99.9%) 640,388 ops/ms
+  Statistics: (min, avg, max) = (11660,693, 12613,742, 13088,038), stdev = 423,577
+  Confidence interval (99.9%): [11973,355, 13254,130]
+
+
+# Run progress: 22,86% complete, ETA 00:29:03
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 4 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Atomic
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 12045,129 ops/ms
+# Warmup Iteration   2: 14247,012 ops/ms
+# Warmup Iteration   3: 13718,936 ops/ms
+# Warmup Iteration   4: 13824,057 ops/ms
+# Warmup Iteration   5: 14088,523 ops/ms
+# Warmup Iteration   6: 13507,481 ops/ms
+# Warmup Iteration   7: 14422,887 ops/ms
+# Warmup Iteration   8: 12313,482 ops/ms
+# Warmup Iteration   9: 14169,805 ops/ms
+# Warmup Iteration  10: 13502,727 ops/ms
+Iteration   1: 13672,804 ops/ms
+                 "atReads": 761,087 ops/ms (1 threads)
+                 "atWrites": 12911,717 ops/ms (19 threads)
+
+Iteration   2: 14337,417 ops/ms
+                 "atReads": 917,394 ops/ms (1 threads)
+                 "atWrites": 13420,023 ops/ms (19 threads)
+
+Iteration   3: 13411,949 ops/ms
+                 "atReads": 715,069 ops/ms (1 threads)
+                 "atWrites": 12696,880 ops/ms (19 threads)
+
+Iteration   4: 13312,310 ops/ms
+                 "atReads": 722,950 ops/ms (1 threads)
+                 "atWrites": 12589,360 ops/ms (19 threads)
+
+Iteration   5: 13400,450 ops/ms
+                 "atReads": 735,856 ops/ms (1 threads)
+                 "atWrites": 12664,594 ops/ms (19 threads)
+
+Iteration   6: 14077,075 ops/ms
+                 "atReads": 841,153 ops/ms (1 threads)
+                 "atWrites": 13235,922 ops/ms (19 threads)
+
+Iteration   7: 13964,497 ops/ms
+                 "atReads": 914,515 ops/ms (1 threads)
+                 "atWrites": 13049,982 ops/ms (19 threads)
+
+Iteration   8: 12503,173 ops/ms
+                 "atReads": 680,180 ops/ms (1 threads)
+                 "atWrites": 11822,993 ops/ms (19 threads)
+
+Iteration   9: 13837,831 ops/ms
+                 "atReads": 811,277 ops/ms (1 threads)
+                 "atWrites": 13026,554 ops/ms (19 threads)
+
+Iteration  10: 13760,824 ops/ms
+                 "atReads": 849,000 ops/ms (1 threads)
+                 "atWrites": 12911,824 ops/ms (19 threads)
+
+
+Result : 13627,833 ±(99.9%) 771,756 ops/ms
+  Statistics: (min, avg, max) = (12503,173, 13627,833, 14337,417), stdev = 510,469
+  Confidence interval (99.9%): [12856,077, 14399,589]
+
+Result "atReads": 794,848 ±(99.9%) 127,478 ops/ms
+  Statistics: (min, avg, max) = (680,180, 794,848, 917,394), stdev = 84,319
+  Confidence interval (99.9%): [667,370, 922,326]
+
+Result "atWrites": 12832,985 ±(99.9%) 662,896 ops/ms
+  Statistics: (min, avg, max) = (11822,993, 12832,985, 13420,023), stdev = 438,464
+  Confidence interval (99.9%): [12170,089, 13495,881]
+
+
+# Run progress: 25,71% complete, ETA 00:27:58
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 5 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Atomic
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 11627,367 ops/ms
+# Warmup Iteration   2: 13830,232 ops/ms
+# Warmup Iteration   3: 13841,194 ops/ms
+# Warmup Iteration   4: 13818,821 ops/ms
+# Warmup Iteration   5: 13531,795 ops/ms
+# Warmup Iteration   6: 12739,731 ops/ms
+# Warmup Iteration   7: 14007,357 ops/ms
+# Warmup Iteration   8: 13755,215 ops/ms
+# Warmup Iteration   9: 14299,840 ops/ms
+# Warmup Iteration  10: 13996,792 ops/ms
+Iteration   1: 12407,397 ops/ms
+                 "atReads": 684,625 ops/ms (1 threads)
+                 "atWrites": 11722,772 ops/ms (19 threads)
+
+Iteration   2: 13997,294 ops/ms
+                 "atReads": 781,053 ops/ms (1 threads)
+                 "atWrites": 13216,240 ops/ms (19 threads)
+
+Iteration   3: 13822,830 ops/ms
+                 "atReads": 774,497 ops/ms (1 threads)
+                 "atWrites": 13048,333 ops/ms (19 threads)
+
+Iteration   4: 14104,298 ops/ms
+                 "atReads": 859,715 ops/ms (1 threads)
+                 "atWrites": 13244,583 ops/ms (19 threads)
+
+Iteration   5: 14215,246 ops/ms
+                 "atReads": 937,557 ops/ms (1 threads)
+                 "atWrites": 13277,689 ops/ms (19 threads)
+
+Iteration   6: 13011,069 ops/ms
+                 "atReads": 878,313 ops/ms (1 threads)
+                 "atWrites": 12132,756 ops/ms (19 threads)
+
+Iteration   7: 14186,688 ops/ms
+                 "atReads": 1006,210 ops/ms (1 threads)
+                 "atWrites": 13180,478 ops/ms (19 threads)
+
+Iteration   8: 13753,316 ops/ms
+                 "atReads": 779,308 ops/ms (1 threads)
+                 "atWrites": 12974,008 ops/ms (19 threads)
+
+Iteration   9: 14028,428 ops/ms
+                 "atReads": 783,065 ops/ms (1 threads)
+                 "atWrites": 13245,363 ops/ms (19 threads)
+
+Iteration  10: 13742,311 ops/ms
+                 "atReads": 874,363 ops/ms (1 threads)
+                 "atWrites": 12867,948 ops/ms (19 threads)
+
+
+Result : 13726,888 ±(99.9%) 875,774 ops/ms
+  Statistics: (min, avg, max) = (12407,397, 13726,888, 14215,247), stdev = 579,270
+  Confidence interval (99.9%): [12851,113, 14602,662]
+
+Result "atReads": 835,871 ±(99.9%) 141,504 ops/ms
+  Statistics: (min, avg, max) = (684,625, 835,871, 1006,210), stdev = 93,596
+  Confidence interval (99.9%): [694,367, 977,374]
+
+Result "atWrites": 12891,017 ±(99.9%) 806,571 ops/ms
+  Statistics: (min, avg, max) = (11722,772, 12891,017, 13277,689), stdev = 533,497
+  Confidence interval (99.9%): [12084,446, 13697,588]
+
+
+# Run progress: 28,57% complete, ETA 00:26:53
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 1 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Dirty
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 9231,247 ops/ms
+# Warmup Iteration   2: 10122,882 ops/ms
+# Warmup Iteration   3: 9774,800 ops/ms
+# Warmup Iteration   4: 10032,390 ops/ms
+# Warmup Iteration   5: 10069,404 ops/ms
+# Warmup Iteration   6: 9774,005 ops/ms
+# Warmup Iteration   7: 10057,596 ops/ms
+# Warmup Iteration   8: 10660,063 ops/ms
+# Warmup Iteration   9: 10458,376 ops/ms
+# Warmup Iteration  10: 10357,677 ops/ms
+Iteration   1: 9403,432 ops/ms
+                 "dReads": 789,286 ops/ms (1 threads)
+                 "dWrites": 8614,146 ops/ms (19 threads)
+
+Iteration   2: 10415,013 ops/ms
+                 "dReads": 833,977 ops/ms (1 threads)
+                 "dWrites": 9581,036 ops/ms (19 threads)
+
+Iteration   3: 10354,213 ops/ms
+                 "dReads": 789,733 ops/ms (1 threads)
+                 "dWrites": 9564,480 ops/ms (19 threads)
+
+Iteration   4: 10917,132 ops/ms
+                 "dReads": 939,333 ops/ms (1 threads)
+                 "dWrites": 9977,799 ops/ms (19 threads)
+
+Iteration   5: 10573,659 ops/ms
+                 "dReads": 872,918 ops/ms (1 threads)
+                 "dWrites": 9700,741 ops/ms (19 threads)
+
+Iteration   6: 10263,809 ops/ms
+                 "dReads": 864,687 ops/ms (1 threads)
+                 "dWrites": 9399,122 ops/ms (19 threads)
+
+Iteration   7: 10989,799 ops/ms
+                 "dReads": 1008,279 ops/ms (1 threads)
+                 "dWrites": 9981,519 ops/ms (19 threads)
+
+Iteration   8: 10361,605 ops/ms
+                 "dReads": 800,094 ops/ms (1 threads)
+                 "dWrites": 9561,512 ops/ms (19 threads)
+
+Iteration   9: 10373,576 ops/ms
+                 "dReads": 806,289 ops/ms (1 threads)
+                 "dWrites": 9567,287 ops/ms (19 threads)
+
+Iteration  10: 10562,656 ops/ms
+                 "dReads": 966,543 ops/ms (1 threads)
+                 "dWrites": 9596,114 ops/ms (19 threads)
+
+
+Result : 10421,489 ±(99.9%) 653,872 ops/ms
+  Statistics: (min, avg, max) = (9403,432, 10421,489, 10989,799), stdev = 432,496
+  Confidence interval (99.9%): [9767,617, 11075,362]
+
+Result "dReads": 867,114 ±(99.9%) 119,686 ops/ms
+  Statistics: (min, avg, max) = (789,286, 867,114, 1008,279), stdev = 79,165
+  Confidence interval (99.9%): [747,428, 986,799]
+
+Result "dWrites": 9554,376 ±(99.9%) 573,282 ops/ms
+  Statistics: (min, avg, max) = (8614,146, 9554,376, 9981,519), stdev = 379,191
+  Confidence interval (99.9%): [8981,093, 10127,658]
+
+
+# Run progress: 31,43% complete, ETA 00:25:48
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 2 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Dirty
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 9745,166 ops/ms
+# Warmup Iteration   2: 10380,516 ops/ms
+# Warmup Iteration   3: 10540,049 ops/ms
+# Warmup Iteration   4: 10167,768 ops/ms
+# Warmup Iteration   5: 10210,026 ops/ms
+# Warmup Iteration   6: 9343,853 ops/ms
+# Warmup Iteration   7: 10233,963 ops/ms
+# Warmup Iteration   8: 9982,742 ops/ms
+# Warmup Iteration   9: 10096,627 ops/ms
+# Warmup Iteration  10: 10032,136 ops/ms
+Iteration   1: 9015,687 ops/ms
+                 "dReads": 657,493 ops/ms (1 threads)
+                 "dWrites": 8358,195 ops/ms (19 threads)
+
+Iteration   2: 10561,881 ops/ms
+                 "dReads": 949,691 ops/ms (1 threads)
+                 "dWrites": 9612,191 ops/ms (19 threads)
+
+Iteration   3: 9935,109 ops/ms
+                 "dReads": 786,517 ops/ms (1 threads)
+                 "dWrites": 9148,592 ops/ms (19 threads)
+
+Iteration   4: 9933,088 ops/ms
+                 "dReads": 866,112 ops/ms (1 threads)
+                 "dWrites": 9066,976 ops/ms (19 threads)
+
+Iteration   5: 10047,887 ops/ms
+                 "dReads": 781,128 ops/ms (1 threads)
+                 "dWrites": 9266,759 ops/ms (19 threads)
+
+Iteration   6: 9593,524 ops/ms
+                 "dReads": 847,830 ops/ms (1 threads)
+                 "dWrites": 8745,694 ops/ms (19 threads)
+
+Iteration   7: 10140,426 ops/ms
+                 "dReads": 840,924 ops/ms (1 threads)
+                 "dWrites": 9299,503 ops/ms (19 threads)
+
+Iteration   8: 10135,846 ops/ms
+                 "dReads": 821,097 ops/ms (1 threads)
+                 "dWrites": 9314,749 ops/ms (19 threads)
+
+Iteration   9: 10039,926 ops/ms
+                 "dReads": 767,112 ops/ms (1 threads)
+                 "dWrites": 9272,814 ops/ms (19 threads)
+
+Iteration  10: 10064,019 ops/ms
+                 "dReads": 871,520 ops/ms (1 threads)
+                 "dWrites": 9192,498 ops/ms (19 threads)
+
+
+Result : 9946,739 ±(99.9%) 612,315 ops/ms
+  Statistics: (min, avg, max) = (9015,687, 9946,739, 10561,881), stdev = 405,008
+  Confidence interval (99.9%): [9334,425, 10559,054]
+
+Result "dReads": 818,942 ±(99.9%) 117,800 ops/ms
+  Statistics: (min, avg, max) = (657,493, 818,942, 949,691), stdev = 77,918
+  Confidence interval (99.9%): [701,142, 936,743]
+
+Result "dWrites": 9127,797 ±(99.9%) 525,180 ops/ms
+  Statistics: (min, avg, max) = (8358,195, 9127,797, 9612,191), stdev = 347,374
+  Confidence interval (99.9%): [8602,617, 9652,977]
+
+
+# Run progress: 34,29% complete, ETA 00:24:44
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 3 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Dirty
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 8832,730 ops/ms
+# Warmup Iteration   2: 10282,689 ops/ms
+# Warmup Iteration   3: 9228,107 ops/ms
+# Warmup Iteration   4: 10176,738 ops/ms
+# Warmup Iteration   5: 10022,322 ops/ms
+# Warmup Iteration   6: 10146,265 ops/ms
+# Warmup Iteration   7: 10077,809 ops/ms
+# Warmup Iteration   8: 9156,837 ops/ms
+# Warmup Iteration   9: 10593,941 ops/ms
+# Warmup Iteration  10: 9944,467 ops/ms
+Iteration   1: 10043,127 ops/ms
+                 "dReads": 769,903 ops/ms (1 threads)
+                 "dWrites": 9273,223 ops/ms (19 threads)
+
+Iteration   2: 10078,965 ops/ms
+                 "dReads": 761,882 ops/ms (1 threads)
+                 "dWrites": 9317,083 ops/ms (19 threads)
+
+Iteration   3: 9170,576 ops/ms
+                 "dReads": 745,304 ops/ms (1 threads)
+                 "dWrites": 8425,272 ops/ms (19 threads)
+
+Iteration   4: 10604,295 ops/ms
+                 "dReads": 995,999 ops/ms (1 threads)
+                 "dWrites": 9608,296 ops/ms (19 threads)
+
+Iteration   5: 10004,738 ops/ms
+                 "dReads": 733,805 ops/ms (1 threads)
+                 "dWrites": 9270,933 ops/ms (19 threads)
+
+Iteration   6: 9904,722 ops/ms
+                 "dReads": 750,934 ops/ms (1 threads)
+                 "dWrites": 9153,788 ops/ms (19 threads)
+
+Iteration   7: 10769,523 ops/ms
+                 "dReads": 1025,914 ops/ms (1 threads)
+                 "dWrites": 9743,609 ops/ms (19 threads)
+
+Iteration   8: 9376,342 ops/ms
+                 "dReads": 740,935 ops/ms (1 threads)
+                 "dWrites": 8635,407 ops/ms (19 threads)
+
+Iteration   9: 10624,462 ops/ms
+                 "dReads": 925,436 ops/ms (1 threads)
+                 "dWrites": 9699,026 ops/ms (19 threads)
+
+Iteration  10: 10169,912 ops/ms
+                 "dReads": 803,950 ops/ms (1 threads)
+                 "dWrites": 9365,962 ops/ms (19 threads)
+
+
+Result : 10074,666 ±(99.9%) 783,074 ops/ms
+  Statistics: (min, avg, max) = (9170,576, 10074,666, 10769,523), stdev = 517,955
+  Confidence interval (99.9%): [9291,592, 10857,741]
+
+Result "dReads": 825,406 ±(99.9%) 170,434 ops/ms
+  Statistics: (min, avg, max) = (733,805, 825,406, 1025,914), stdev = 112,732
+  Confidence interval (99.9%): [654,972, 995,840]
+
+Result "dWrites": 9249,260 ±(99.9%) 649,244 ops/ms
+  Statistics: (min, avg, max) = (8425,272, 9249,260, 9743,609), stdev = 429,435
+  Confidence interval (99.9%): [8600,016, 9898,504]
+
+
+# Run progress: 37,14% complete, ETA 00:23:39
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 4 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Dirty
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 8907,259 ops/ms
+# Warmup Iteration   2: 10800,920 ops/ms
+# Warmup Iteration   3: 10202,221 ops/ms
+# Warmup Iteration   4: 10181,677 ops/ms
+# Warmup Iteration   5: 10473,711 ops/ms
+# Warmup Iteration   6: 9398,933 ops/ms
+# Warmup Iteration   7: 10170,851 ops/ms
+# Warmup Iteration   8: 10741,607 ops/ms
+# Warmup Iteration   9: 10604,798 ops/ms
+# Warmup Iteration  10: 10136,844 ops/ms
+Iteration   1: 10186,302 ops/ms
+                 "dReads": 785,538 ops/ms (1 threads)
+                 "dWrites": 9400,765 ops/ms (19 threads)
+
+Iteration   2: 10377,850 ops/ms
+                 "dReads": 829,106 ops/ms (1 threads)
+                 "dWrites": 9548,745 ops/ms (19 threads)
+
+Iteration   3: 9982,800 ops/ms
+                 "dReads": 820,149 ops/ms (1 threads)
+                 "dWrites": 9162,651 ops/ms (19 threads)
+
+Iteration   4: 9800,461 ops/ms
+                 "dReads": 780,228 ops/ms (1 threads)
+                 "dWrites": 9020,232 ops/ms (19 threads)
+
+Iteration   5: 10161,841 ops/ms
+                 "dReads": 751,996 ops/ms (1 threads)
+                 "dWrites": 9409,845 ops/ms (19 threads)
+
+Iteration   6: 10614,354 ops/ms
+                 "dReads": 907,405 ops/ms (1 threads)
+                 "dWrites": 9706,949 ops/ms (19 threads)
+
+Iteration   7: 10581,349 ops/ms
+                 "dReads": 913,748 ops/ms (1 threads)
+                 "dWrites": 9667,601 ops/ms (19 threads)
+
+Iteration   8: 9190,236 ops/ms
+                 "dReads": 735,737 ops/ms (1 threads)
+                 "dWrites": 8454,500 ops/ms (19 threads)
+
+Iteration   9: 10500,440 ops/ms
+                 "dReads": 939,405 ops/ms (1 threads)
+                 "dWrites": 9561,035 ops/ms (19 threads)
+
+Iteration  10: 10434,554 ops/ms
+                 "dReads": 848,113 ops/ms (1 threads)
+                 "dWrites": 9586,441 ops/ms (19 threads)
+
+
+Result : 10183,019 ±(99.9%) 660,777 ops/ms
+  Statistics: (min, avg, max) = (9190,236, 10183,019, 10614,354), stdev = 437,063
+  Confidence interval (99.9%): [9522,242, 10843,796]
+
+Result "dReads": 831,142 ±(99.9%) 106,681 ops/ms
+  Statistics: (min, avg, max) = (735,737, 831,142, 939,405), stdev = 70,563
+  Confidence interval (99.9%): [724,461, 937,823]
+
+Result "dWrites": 9351,876 ±(99.9%) 579,022 ops/ms
+  Statistics: (min, avg, max) = (8454,500, 9351,876, 9706,949), stdev = 382,987
+  Confidence interval (99.9%): [8772,854, 9930,898]
+
+
+# Run progress: 40,00% complete, ETA 00:22:35
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 5 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Dirty
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 9235,372 ops/ms
+# Warmup Iteration   2: 10181,416 ops/ms
+# Warmup Iteration   3: 10380,677 ops/ms
+# Warmup Iteration   4: 10503,496 ops/ms
+# Warmup Iteration   5: 10019,983 ops/ms
+# Warmup Iteration   6: 9514,135 ops/ms
+# Warmup Iteration   7: 10150,269 ops/ms
+# Warmup Iteration   8: 10484,748 ops/ms
+# Warmup Iteration   9: 10243,288 ops/ms
+# Warmup Iteration  10: 10077,966 ops/ms
+Iteration   1: 9207,517 ops/ms
+                 "dReads": 743,168 ops/ms (1 threads)
+                 "dWrites": 8464,349 ops/ms (19 threads)
+
+Iteration   2: 10244,824 ops/ms
+                 "dReads": 848,431 ops/ms (1 threads)
+                 "dWrites": 9396,393 ops/ms (19 threads)
+
+Iteration   3: 10371,665 ops/ms
+                 "dReads": 942,747 ops/ms (1 threads)
+                 "dWrites": 9428,918 ops/ms (19 threads)
+
+Iteration   4: 10182,942 ops/ms
+                 "dReads": 887,616 ops/ms (1 threads)
+                 "dWrites": 9295,326 ops/ms (19 threads)
+
+Iteration   5: 10011,769 ops/ms
+                 "dReads": 832,825 ops/ms (1 threads)
+                 "dWrites": 9178,944 ops/ms (19 threads)
+
+Iteration   6: 9417,542 ops/ms
+                 "dReads": 784,671 ops/ms (1 threads)
+                 "dWrites": 8632,871 ops/ms (19 threads)
+
+Iteration   7: 10838,712 ops/ms
+                 "dReads": 1006,442 ops/ms (1 threads)
+                 "dWrites": 9832,270 ops/ms (19 threads)
+
+Iteration   8: 10391,340 ops/ms
+                 "dReads": 952,593 ops/ms (1 threads)
+                 "dWrites": 9438,747 ops/ms (19 threads)
+
+Iteration   9: 10237,607 ops/ms
+                 "dReads": 900,243 ops/ms (1 threads)
+                 "dWrites": 9337,364 ops/ms (19 threads)
+
+Iteration  10: 10327,826 ops/ms
+                 "dReads": 857,395 ops/ms (1 threads)
+                 "dWrites": 9470,431 ops/ms (19 threads)
+
+
+Result : 10123,174 ±(99.9%) 724,669 ops/ms
+  Statistics: (min, avg, max) = (9207,517, 10123,174, 10838,712), stdev = 479,323
+  Confidence interval (99.9%): [9398,506, 10847,843]
+
+Result "dReads": 875,613 ±(99.9%) 120,331 ops/ms
+  Statistics: (min, avg, max) = (743,168, 875,613, 1006,442), stdev = 79,592
+  Confidence interval (99.9%): [755,282, 995,945]
+
+Result "dWrites": 9247,561 ±(99.9%) 615,043 ops/ms
+  Statistics: (min, avg, max) = (8464,349, 9247,561, 9832,270), stdev = 406,813
+  Confidence interval (99.9%): [8632,519, 9862,604]
+
+
+# Run progress: 42,86% complete, ETA 00:21:30
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 1 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.DirtyVolatile
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 8172,554 ops/ms
+# Warmup Iteration   2: 9491,697 ops/ms
+# Warmup Iteration   3: 8836,807 ops/ms
+# Warmup Iteration   4: 9781,626 ops/ms
+# Warmup Iteration   5: 9858,364 ops/ms
+# Warmup Iteration   6: 9722,730 ops/ms
+# Warmup Iteration   7: 9953,887 ops/ms
+# Warmup Iteration   8: 8946,209 ops/ms
+# Warmup Iteration   9: 9526,277 ops/ms
+# Warmup Iteration  10: 9744,279 ops/ms
+Iteration   1: 9755,674 ops/ms
+                 "dvReads": 1388,064 ops/ms (1 threads)
+                 "dvWrites": 8367,611 ops/ms (19 threads)
+
+Iteration   2: 9813,510 ops/ms
+                 "dvReads": 1435,611 ops/ms (1 threads)
+                 "dvWrites": 8377,899 ops/ms (19 threads)
+
+Iteration   3: 9289,943 ops/ms
+                 "dvReads": 1184,697 ops/ms (1 threads)
+                 "dvWrites": 8105,246 ops/ms (19 threads)
+
+Iteration   4: 9732,375 ops/ms
+                 "dvReads": 1423,738 ops/ms (1 threads)
+                 "dvWrites": 8308,637 ops/ms (19 threads)
+
+Iteration   5: 9831,711 ops/ms
+                 "dvReads": 1426,104 ops/ms (1 threads)
+                 "dvWrites": 8405,607 ops/ms (19 threads)
+
+Iteration   6: 10246,210 ops/ms
+                 "dvReads": 1320,104 ops/ms (1 threads)
+                 "dvWrites": 8926,106 ops/ms (19 threads)
+
+Iteration   7: 9697,104 ops/ms
+                 "dvReads": 1416,498 ops/ms (1 threads)
+                 "dvWrites": 8280,606 ops/ms (19 threads)
+
+Iteration   8: 8969,165 ops/ms
+                 "dvReads": 1315,623 ops/ms (1 threads)
+                 "dvWrites": 7653,542 ops/ms (19 threads)
+
+Iteration   9: 9993,916 ops/ms
+                 "dvReads": 1378,849 ops/ms (1 threads)
+                 "dvWrites": 8615,067 ops/ms (19 threads)
+
+Iteration  10: 10102,888 ops/ms
+                 "dvReads": 1314,647 ops/ms (1 threads)
+                 "dvWrites": 8788,241 ops/ms (19 threads)
+
+
+Result : 9743,250 ±(99.9%) 566,807 ops/ms
+  Statistics: (min, avg, max) = (8969,165, 9743,250, 10246,210), stdev = 374,908
+  Confidence interval (99.9%): [9176,443, 10310,056]
+
+Result "dvReads": 1360,394 ±(99.9%) 118,006 ops/ms
+  Statistics: (min, avg, max) = (1184,697, 1360,394, 1435,611), stdev = 78,054
+  Confidence interval (99.9%): [1242,387, 1478,400]
+
+Result "dvWrites": 8382,856 ±(99.9%) 537,858 ops/ms
+  Statistics: (min, avg, max) = (7653,542, 8382,856, 8926,106), stdev = 355,760
+  Confidence interval (99.9%): [7844,998, 8920,714]
+
+
+# Run progress: 45,71% complete, ETA 00:20:26
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 2 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.DirtyVolatile
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 8228,445 ops/ms
+# Warmup Iteration   2: 9561,019 ops/ms
+# Warmup Iteration   3: 10238,894 ops/ms
+# Warmup Iteration   4: 9736,695 ops/ms
+# Warmup Iteration   5: 9564,914 ops/ms
+# Warmup Iteration   6: 9432,754 ops/ms
+# Warmup Iteration   7: 9630,253 ops/ms
+# Warmup Iteration   8: 8697,365 ops/ms
+# Warmup Iteration   9: 9631,866 ops/ms
+# Warmup Iteration  10: 9422,698 ops/ms
+Iteration   1: 9559,187 ops/ms
+                 "dvReads": 1417,876 ops/ms (1 threads)
+                 "dvWrites": 8141,311 ops/ms (19 threads)
+
+Iteration   2: 9465,238 ops/ms
+                 "dvReads": 1404,688 ops/ms (1 threads)
+                 "dvWrites": 8060,550 ops/ms (19 threads)
+
+Iteration   3: 8802,763 ops/ms
+                 "dvReads": 1209,531 ops/ms (1 threads)
+                 "dvWrites": 7593,232 ops/ms (19 threads)
+
+Iteration   4: 9229,879 ops/ms
+                 "dvReads": 1177,480 ops/ms (1 threads)
+                 "dvWrites": 8052,399 ops/ms (19 threads)
+
+Iteration   5: 9498,507 ops/ms
+                 "dvReads": 1352,115 ops/ms (1 threads)
+                 "dvWrites": 8146,392 ops/ms (19 threads)
+
+Iteration   6: 9372,608 ops/ms
+                 "dvReads": 1233,362 ops/ms (1 threads)
+                 "dvWrites": 8139,245 ops/ms (19 threads)
+
+Iteration   7: 9610,961 ops/ms
+                 "dvReads": 1491,090 ops/ms (1 threads)
+                 "dvWrites": 8119,871 ops/ms (19 threads)
+
+Iteration   8: 8321,416 ops/ms
+                 "dvReads": 1048,755 ops/ms (1 threads)
+                 "dvWrites": 7272,661 ops/ms (19 threads)
+
+Iteration   9: 9497,645 ops/ms
+                 "dvReads": 1377,875 ops/ms (1 threads)
+                 "dvWrites": 8119,770 ops/ms (19 threads)
+
+Iteration  10: 9604,361 ops/ms
+                 "dvReads": 1380,243 ops/ms (1 threads)
+                 "dvWrites": 8224,118 ops/ms (19 threads)
+
+
+Result : 9296,256 ±(99.9%) 632,897 ops/ms
+  Statistics: (min, avg, max) = (8321,416, 9296,256, 9610,961), stdev = 418,622
+  Confidence interval (99.9%): [8663,359, 9929,154]
+
+Result "dvReads": 1309,301 ±(99.9%) 205,625 ops/ms
+  Statistics: (min, avg, max) = (1048,755, 1309,301, 1491,090), stdev = 136,008
+  Confidence interval (99.9%): [1103,676, 1514,927]
+
+Result "dvWrites": 7986,955 ±(99.9%) 461,584 ops/ms
+  Statistics: (min, avg, max) = (7272,661, 7986,955, 8224,118), stdev = 305,309
+  Confidence interval (99.9%): [7525,371, 8448,539]
+
+
+# Run progress: 48,57% complete, ETA 00:19:21
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 3 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.DirtyVolatile
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 8317,075 ops/ms
+# Warmup Iteration   2: 10248,059 ops/ms
+# Warmup Iteration   3: 9596,487 ops/ms
+# Warmup Iteration   4: 9865,994 ops/ms
+# Warmup Iteration   5: 9722,013 ops/ms
+# Warmup Iteration   6: 9146,267 ops/ms
+# Warmup Iteration   7: 10242,434 ops/ms
+# Warmup Iteration   8: 8694,141 ops/ms
+# Warmup Iteration   9: 8559,060 ops/ms
+# Warmup Iteration  10: 8650,503 ops/ms
+Iteration   1: 8079,676 ops/ms
+                 "dvReads": 755,854 ops/ms (1 threads)
+                 "dvWrites": 7323,821 ops/ms (19 threads)
+
+Iteration   2: 8700,028 ops/ms
+                 "dvReads": 799,578 ops/ms (1 threads)
+                 "dvWrites": 7900,450 ops/ms (19 threads)
+
+Iteration   3: 8724,643 ops/ms
+                 "dvReads": 813,526 ops/ms (1 threads)
+                 "dvWrites": 7911,117 ops/ms (19 threads)
+
+Iteration   4: 8759,611 ops/ms
+                 "dvReads": 832,433 ops/ms (1 threads)
+                 "dvWrites": 7927,178 ops/ms (19 threads)
+
+Iteration   5: 8318,256 ops/ms
+                 "dvReads": 773,902 ops/ms (1 threads)
+                 "dvWrites": 7544,355 ops/ms (19 threads)
+
+Iteration   6: 8226,664 ops/ms
+                 "dvReads": 752,208 ops/ms (1 threads)
+                 "dvWrites": 7474,455 ops/ms (19 threads)
+
+Iteration   7: 8451,315 ops/ms
+                 "dvReads": 797,712 ops/ms (1 threads)
+                 "dvWrites": 7653,603 ops/ms (19 threads)
+
+Iteration   8: 8695,572 ops/ms
+                 "dvReads": 798,953 ops/ms (1 threads)
+                 "dvWrites": 7896,619 ops/ms (19 threads)
+
+Iteration   9: 8813,842 ops/ms
+                 "dvReads": 728,569 ops/ms (1 threads)
+                 "dvWrites": 8085,273 ops/ms (19 threads)
+
+Iteration  10: 8610,909 ops/ms
+                 "dvReads": 796,871 ops/ms (1 threads)
+                 "dvWrites": 7814,038 ops/ms (19 threads)
+
+
+Result : 8538,052 ±(99.9%) 383,543 ops/ms
+  Statistics: (min, avg, max) = (8079,676, 8538,052, 8813,842), stdev = 253,690
+  Confidence interval (99.9%): [8154,509, 8921,594]
+
+Result "dvReads": 784,961 ±(99.9%) 47,824 ops/ms
+  Statistics: (min, avg, max) = (728,569, 784,961, 832,433), stdev = 31,633
+  Confidence interval (99.9%): [737,136, 832,785]
+
+Result "dvWrites": 7753,091 ±(99.9%) 365,854 ops/ms
+  Statistics: (min, avg, max) = (7323,821, 7753,091, 8085,273), stdev = 241,990
+  Confidence interval (99.9%): [7387,237, 8118,945]
+
+
+# Run progress: 51,43% complete, ETA 00:18:16
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 4 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.DirtyVolatile
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 9063,968 ops/ms
+# Warmup Iteration   2: 10893,073 ops/ms
+# Warmup Iteration   3: 10547,065 ops/ms
+# Warmup Iteration   4: 10347,477 ops/ms
+# Warmup Iteration   5: 10570,263 ops/ms
+# Warmup Iteration   6: 10423,187 ops/ms
+# Warmup Iteration   7: 10979,446 ops/ms
+# Warmup Iteration   8: 9776,204 ops/ms
+# Warmup Iteration   9: 9623,927 ops/ms
+# Warmup Iteration  10: 10070,567 ops/ms
+Iteration   1: 9556,373 ops/ms
+                 "dvReads": 1410,855 ops/ms (1 threads)
+                 "dvWrites": 8145,518 ops/ms (19 threads)
+
+Iteration   2: 9635,497 ops/ms
+                 "dvReads": 1291,195 ops/ms (1 threads)
+                 "dvWrites": 8344,302 ops/ms (19 threads)
+
+Iteration   3: 9025,867 ops/ms
+                 "dvReads": 1321,582 ops/ms (1 threads)
+                 "dvWrites": 7704,285 ops/ms (19 threads)
+
+Iteration   4: 9836,290 ops/ms
+                 "dvReads": 1450,289 ops/ms (1 threads)
+                 "dvWrites": 8386,001 ops/ms (19 threads)
+
+Iteration   5: 9880,778 ops/ms
+                 "dvReads": 1406,580 ops/ms (1 threads)
+                 "dvWrites": 8474,198 ops/ms (19 threads)
+
+Iteration   6: 9462,835 ops/ms
+                 "dvReads": 1288,966 ops/ms (1 threads)
+                 "dvWrites": 8173,869 ops/ms (19 threads)
+
+Iteration   7: 9844,529 ops/ms
+                 "dvReads": 1367,739 ops/ms (1 threads)
+                 "dvWrites": 8476,790 ops/ms (19 threads)
+
+Iteration   8: 8836,157 ops/ms
+                 "dvReads": 1296,164 ops/ms (1 threads)
+                 "dvWrites": 7539,993 ops/ms (19 threads)
+
+Iteration   9: 10511,748 ops/ms
+                 "dvReads": 1414,735 ops/ms (1 threads)
+                 "dvWrites": 9097,012 ops/ms (19 threads)
+
+Iteration  10: 9427,352 ops/ms
+                 "dvReads": 1238,665 ops/ms (1 threads)
+                 "dvWrites": 8188,687 ops/ms (19 threads)
+
+
+Result : 9601,743 ±(99.9%) 711,017 ops/ms
+  Statistics: (min, avg, max) = (8836,157, 9601,743, 10511,748), stdev = 470,294
+  Confidence interval (99.9%): [8890,725, 10312,760]
+
+Result "dvReads": 1348,677 ±(99.9%) 106,589 ops/ms
+  Statistics: (min, avg, max) = (1238,665, 1348,677, 1450,289), stdev = 70,502
+  Confidence interval (99.9%): [1242,088, 1455,266]
+
+Result "dvWrites": 8253,066 ±(99.9%) 651,018 ops/ms
+  Statistics: (min, avg, max) = (7539,993, 8253,066, 9097,012), stdev = 430,608
+  Confidence interval (99.9%): [7602,048, 8904,083]
+
+
+# Run progress: 54,29% complete, ETA 00:17:12
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 5 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.DirtyVolatile
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 8501,588 ops/ms
+# Warmup Iteration   2: 9660,055 ops/ms
+# Warmup Iteration   3: 8655,108 ops/ms
+# Warmup Iteration   4: 9385,353 ops/ms
+# Warmup Iteration   5: 9967,345 ops/ms
+# Warmup Iteration   6: 9324,381 ops/ms
+# Warmup Iteration   7: 9366,768 ops/ms
+# Warmup Iteration   8: 8072,434 ops/ms
+# Warmup Iteration   9: 8731,463 ops/ms
+# Warmup Iteration  10: 8732,161 ops/ms
+Iteration   1: 8622,664 ops/ms
+                 "dvReads": 805,245 ops/ms (1 threads)
+                 "dvWrites": 7817,419 ops/ms (19 threads)
+
+Iteration   2: 8589,030 ops/ms
+                 "dvReads": 787,996 ops/ms (1 threads)
+                 "dvWrites": 7801,034 ops/ms (19 threads)
+
+Iteration   3: 8119,065 ops/ms
+                 "dvReads": 766,371 ops/ms (1 threads)
+                 "dvWrites": 7352,694 ops/ms (19 threads)
+
+Iteration   4: 8720,991 ops/ms
+                 "dvReads": 799,447 ops/ms (1 threads)
+                 "dvWrites": 7921,544 ops/ms (19 threads)
+
+Iteration   5: 8668,507 ops/ms
+                 "dvReads": 808,352 ops/ms (1 threads)
+                 "dvWrites": 7860,155 ops/ms (19 threads)
+
+Iteration   6: 8691,610 ops/ms
+                 "dvReads": 809,385 ops/ms (1 threads)
+                 "dvWrites": 7882,225 ops/ms (19 threads)
+
+Iteration   7: 8587,501 ops/ms
+                 "dvReads": 766,661 ops/ms (1 threads)
+                 "dvWrites": 7820,840 ops/ms (19 threads)
+
+Iteration   8: 8110,298 ops/ms
+                 "dvReads": 768,325 ops/ms (1 threads)
+                 "dvWrites": 7341,973 ops/ms (19 threads)
+
+Iteration   9: 8427,052 ops/ms
+                 "dvReads": 738,098 ops/ms (1 threads)
+                 "dvWrites": 7688,954 ops/ms (19 threads)
+
+Iteration  10: 8616,975 ops/ms
+                 "dvReads": 729,449 ops/ms (1 threads)
+                 "dvWrites": 7887,526 ops/ms (19 threads)
+
+
+Result : 8515,369 ±(99.9%) 341,127 ops/ms
+  Statistics: (min, avg, max) = (8110,298, 8515,369, 8720,991), stdev = 225,634
+  Confidence interval (99.9%): [8174,243, 8856,496]
+
+Result "dvReads": 777,933 ±(99.9%) 43,688 ops/ms
+  Statistics: (min, avg, max) = (729,449, 777,933, 809,385), stdev = 28,897
+  Confidence interval (99.9%): [734,245, 821,621]
+
+Result "dvWrites": 7737,436 ±(99.9%) 325,279 ops/ms
+  Statistics: (min, avg, max) = (7341,973, 7737,436, 7921,544), stdev = 215,152
+  Confidence interval (99.9%): [7412,157, 8062,715]
+
+
+# Run progress: 57,14% complete, ETA 00:16:07
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 1 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.ReentrantReadWriteLock
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 2084,756 ops/ms
+# Warmup Iteration   2: 2066,942 ops/ms
+# Warmup Iteration   3: 2040,143 ops/ms
+# Warmup Iteration   4: 2014,237 ops/ms
+# Warmup Iteration   5: 2001,085 ops/ms
+# Warmup Iteration   6: 1989,630 ops/ms
+# Warmup Iteration   7: 2003,371 ops/ms
+# Warmup Iteration   8: 1992,609 ops/ms
+# Warmup Iteration   9: 1973,794 ops/ms
+# Warmup Iteration  10: 1978,058 ops/ms
+Iteration   1: 2065,477 ops/ms
+                 "rrwlReads": 3,607 ops/ms (1 threads)
+                 "rrwlWrites": 2061,870 ops/ms (19 threads)
+
+Iteration   2: 2017,028 ops/ms
+                 "rrwlReads": 3,597 ops/ms (1 threads)
+                 "rrwlWrites": 2013,431 ops/ms (19 threads)
+
+Iteration   3: 2056,289 ops/ms
+                 "rrwlReads": 3,665 ops/ms (1 threads)
+                 "rrwlWrites": 2052,623 ops/ms (19 threads)
+
+Iteration   4: 1982,616 ops/ms
+                 "rrwlReads": 3,538 ops/ms (1 threads)
+                 "rrwlWrites": 1979,078 ops/ms (19 threads)
+
+Iteration   5: 1997,243 ops/ms
+                 "rrwlReads": 3,716 ops/ms (1 threads)
+                 "rrwlWrites": 1993,527 ops/ms (19 threads)
+
+Iteration   6: 1981,918 ops/ms
+                 "rrwlReads": 3,582 ops/ms (1 threads)
+                 "rrwlWrites": 1978,336 ops/ms (19 threads)
+
+Iteration   7: 1995,181 ops/ms
+                 "rrwlReads": 3,550 ops/ms (1 threads)
+                 "rrwlWrites": 1991,631 ops/ms (19 threads)
+
+Iteration   8: 2001,232 ops/ms
+                 "rrwlReads": 3,449 ops/ms (1 threads)
+                 "rrwlWrites": 1997,783 ops/ms (19 threads)
+
+Iteration   9: 2049,500 ops/ms
+                 "rrwlReads": 3,515 ops/ms (1 threads)
+                 "rrwlWrites": 2045,985 ops/ms (19 threads)
+
+Iteration  10: 2019,362 ops/ms
+                 "rrwlReads": 3,582 ops/ms (1 threads)
+                 "rrwlWrites": 2015,780 ops/ms (19 threads)
+
+
+Result : 2016,585 ±(99.9%) 46,412 ops/ms
+  Statistics: (min, avg, max) = (1981,918, 2016,585, 2065,477), stdev = 30,699
+  Confidence interval (99.9%): [1970,172, 2062,997]
+
+Result "rrwlReads": 3,580 ±(99.9%) 0,114 ops/ms
+  Statistics: (min, avg, max) = (3,449, 3,580, 3,716), stdev = 0,075
+  Confidence interval (99.9%): [3,466, 3,694]
+
+Result "rrwlWrites": 2013,004 ±(99.9%) 46,391 ops/ms
+  Statistics: (min, avg, max) = (1978,336, 2013,004, 2061,870), stdev = 30,684
+  Confidence interval (99.9%): [1966,614, 2059,395]
+
+
+# Run progress: 60,00% complete, ETA 00:15:03
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 2 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.ReentrantReadWriteLock
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 2024,375 ops/ms
+# Warmup Iteration   2: 2077,522 ops/ms
+# Warmup Iteration   3: 2138,245 ops/ms
+# Warmup Iteration   4: 2064,704 ops/ms
+# Warmup Iteration   5: 2163,465 ops/ms
+# Warmup Iteration   6: 2021,499 ops/ms
+# Warmup Iteration   7: 2225,097 ops/ms
+# Warmup Iteration   8: 2092,577 ops/ms
+# Warmup Iteration   9: 2259,639 ops/ms
+# Warmup Iteration  10: 2186,442 ops/ms
+Iteration   1: 2006,194 ops/ms
+                 "rrwlReads": 3,515 ops/ms (1 threads)
+                 "rrwlWrites": 2002,679 ops/ms (19 threads)
+
+Iteration   2: 2016,489 ops/ms
+                 "rrwlReads": 3,669 ops/ms (1 threads)
+                 "rrwlWrites": 2012,821 ops/ms (19 threads)
+
+Iteration   3: 2051,405 ops/ms
+                 "rrwlReads": 3,549 ops/ms (1 threads)
+                 "rrwlWrites": 2047,856 ops/ms (19 threads)
+
+Iteration   4: 2067,112 ops/ms
+                 "rrwlReads": 3,556 ops/ms (1 threads)
+                 "rrwlWrites": 2063,556 ops/ms (19 threads)
+
+Iteration   5: 2064,940 ops/ms
+                 "rrwlReads": 3,568 ops/ms (1 threads)
+                 "rrwlWrites": 2061,373 ops/ms (19 threads)
+
+Iteration   6: 2121,340 ops/ms
+                 "rrwlReads": 3,681 ops/ms (1 threads)
+                 "rrwlWrites": 2117,659 ops/ms (19 threads)
+
+Iteration   7: 2029,795 ops/ms
+                 "rrwlReads": 3,563 ops/ms (1 threads)
+                 "rrwlWrites": 2026,232 ops/ms (19 threads)
+
+Iteration   8: 2068,215 ops/ms
+                 "rrwlReads": 3,511 ops/ms (1 threads)
+                 "rrwlWrites": 2064,705 ops/ms (19 threads)
+
+Iteration   9: 2063,260 ops/ms
+                 "rrwlReads": 3,580 ops/ms (1 threads)
+                 "rrwlWrites": 2059,680 ops/ms (19 threads)
+
+Iteration  10: 2025,175 ops/ms
+                 "rrwlReads": 3,642 ops/ms (1 threads)
+                 "rrwlWrites": 2021,533 ops/ms (19 threads)
+
+
+Result : 2051,392 ±(99.9%) 50,802 ops/ms
+  Statistics: (min, avg, max) = (2006,194, 2051,392, 2121,340), stdev = 33,602
+  Confidence interval (99.9%): [2000,590, 2102,194]
+
+Result "rrwlReads": 3,583 ±(99.9%) 0,091 ops/ms
+  Statistics: (min, avg, max) = (3,511, 3,583, 3,681), stdev = 0,061
+  Confidence interval (99.9%): [3,492, 3,675]
+
+Result "rrwlWrites": 2047,809 ±(99.9%) 50,782 ops/ms
+  Statistics: (min, avg, max) = (2002,679, 2047,809, 2117,659), stdev = 33,589
+  Confidence interval (99.9%): [1997,027, 2098,592]
+
+
+# Run progress: 62,86% complete, ETA 00:13:58
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 3 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.ReentrantReadWriteLock
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 2043,019 ops/ms
+# Warmup Iteration   2: 2038,566 ops/ms
+# Warmup Iteration   3: 2118,498 ops/ms
+# Warmup Iteration   4: 2113,292 ops/ms
+# Warmup Iteration   5: 2127,905 ops/ms
+# Warmup Iteration   6: 2147,930 ops/ms
+# Warmup Iteration   7: 2146,246 ops/ms
+# Warmup Iteration   8: 2328,645 ops/ms
+# Warmup Iteration   9: 2190,432 ops/ms
+# Warmup Iteration  10: 2146,145 ops/ms
+Iteration   1: 2259,004 ops/ms
+                 "rrwlReads": 3,871 ops/ms (1 threads)
+                 "rrwlWrites": 2255,133 ops/ms (19 threads)
+
+Iteration   2: 2146,900 ops/ms
+                 "rrwlReads": 3,616 ops/ms (1 threads)
+                 "rrwlWrites": 2143,284 ops/ms (19 threads)
+
+Iteration   3: 2191,480 ops/ms
+                 "rrwlReads": 3,605 ops/ms (1 threads)
+                 "rrwlWrites": 2187,876 ops/ms (19 threads)
+
+Iteration   4: 2130,519 ops/ms
+                 "rrwlReads": 3,689 ops/ms (1 threads)
+                 "rrwlWrites": 2126,830 ops/ms (19 threads)
+
+Iteration   5: 2170,781 ops/ms
+                 "rrwlReads": 3,509 ops/ms (1 threads)
+                 "rrwlWrites": 2167,272 ops/ms (19 threads)
+
+Iteration   6: 2246,874 ops/ms
+                 "rrwlReads": 3,562 ops/ms (1 threads)
+                 "rrwlWrites": 2243,311 ops/ms (19 threads)
+
+Iteration   7: 2176,360 ops/ms
+                 "rrwlReads": 3,702 ops/ms (1 threads)
+                 "rrwlWrites": 2172,659 ops/ms (19 threads)
+
+Iteration   8: 2243,830 ops/ms
+                 "rrwlReads": 3,369 ops/ms (1 threads)
+                 "rrwlWrites": 2240,462 ops/ms (19 threads)
+
+Iteration   9: 2214,878 ops/ms
+                 "rrwlReads": 3,599 ops/ms (1 threads)
+                 "rrwlWrites": 2211,279 ops/ms (19 threads)
+
+Iteration  10: 2148,867 ops/ms
+                 "rrwlReads": 3,531 ops/ms (1 threads)
+                 "rrwlWrites": 2145,336 ops/ms (19 threads)
+
+
+Result : 2192,949 ±(99.9%) 69,595 ops/ms
+  Statistics: (min, avg, max) = (2130,519, 2192,949, 2259,004), stdev = 46,033
+  Confidence interval (99.9%): [2123,355, 2262,544]
+
+Result "rrwlReads": 3,605 ±(99.9%) 0,201 ops/ms
+  Statistics: (min, avg, max) = (3,369, 3,605, 3,871), stdev = 0,133
+  Confidence interval (99.9%): [3,404, 3,807]
+
+Result "rrwlWrites": 2189,344 ±(99.9%) 69,591 ops/ms
+  Statistics: (min, avg, max) = (2126,830, 2189,344, 2255,133), stdev = 46,030
+  Confidence interval (99.9%): [2119,753, 2258,935]
+
+
+# Run progress: 65,71% complete, ETA 00:12:54
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 4 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.ReentrantReadWriteLock
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 2087,070 ops/ms
+# Warmup Iteration   2: 2087,477 ops/ms
+# Warmup Iteration   3: 2095,447 ops/ms
+# Warmup Iteration   4: 2044,366 ops/ms
+# Warmup Iteration   5: 2043,735 ops/ms
+# Warmup Iteration   6: 2016,195 ops/ms
+# Warmup Iteration   7: 2105,862 ops/ms
+# Warmup Iteration   8: 2057,709 ops/ms
+# Warmup Iteration   9: 2100,391 ops/ms
+# Warmup Iteration  10: 2019,616 ops/ms
+Iteration   1: 1975,892 ops/ms
+                 "rrwlReads": 3,709 ops/ms (1 threads)
+                 "rrwlWrites": 1972,184 ops/ms (19 threads)
+
+Iteration   2: 2043,363 ops/ms
+                 "rrwlReads": 3,645 ops/ms (1 threads)
+                 "rrwlWrites": 2039,719 ops/ms (19 threads)
+
+Iteration   3: 1977,730 ops/ms
+                 "rrwlReads": 3,665 ops/ms (1 threads)
+                 "rrwlWrites": 1974,065 ops/ms (19 threads)
+
+Iteration   4: 2040,618 ops/ms
+                 "rrwlReads": 3,605 ops/ms (1 threads)
+                 "rrwlWrites": 2037,013 ops/ms (19 threads)
+
+Iteration   5: 2139,960 ops/ms
+                 "rrwlReads": 3,536 ops/ms (1 threads)
+                 "rrwlWrites": 2136,425 ops/ms (19 threads)
+
+Iteration   6: 2066,224 ops/ms
+                 "rrwlReads": 3,660 ops/ms (1 threads)
+                 "rrwlWrites": 2062,564 ops/ms (19 threads)
+
+Iteration   7: 2002,283 ops/ms
+                 "rrwlReads": 3,664 ops/ms (1 threads)
+                 "rrwlWrites": 1998,619 ops/ms (19 threads)
+
+Iteration   8: 2024,836 ops/ms
+                 "rrwlReads": 3,692 ops/ms (1 threads)
+                 "rrwlWrites": 2021,144 ops/ms (19 threads)
+
+Iteration   9: 2019,976 ops/ms
+                 "rrwlReads": 3,544 ops/ms (1 threads)
+                 "rrwlWrites": 2016,432 ops/ms (19 threads)
+
+Iteration  10: 2014,247 ops/ms
+                 "rrwlReads": 3,488 ops/ms (1 threads)
+                 "rrwlWrites": 2010,758 ops/ms (19 threads)
+
+
+Result : 2030,513 ±(99.9%) 72,147 ops/ms
+  Statistics: (min, avg, max) = (1975,892, 2030,513, 2139,960), stdev = 47,721
+  Confidence interval (99.9%): [1958,366, 2102,660]
+
+Result "rrwlReads": 3,621 ±(99.9%) 0,112 ops/ms
+  Statistics: (min, avg, max) = (3,488, 3,621, 3,709), stdev = 0,074
+  Confidence interval (99.9%): [3,508, 3,733]
+
+Result "rrwlWrites": 2026,892 ±(99.9%) 72,195 ops/ms
+  Statistics: (min, avg, max) = (1972,184, 2026,892, 2136,425), stdev = 47,752
+  Confidence interval (99.9%): [1954,697, 2099,087]
+
+
+# Run progress: 68,57% complete, ETA 00:11:49
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 5 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.ReentrantReadWriteLock
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 2078,909 ops/ms
+# Warmup Iteration   2: 2127,882 ops/ms
+# Warmup Iteration   3: 2112,621 ops/ms
+# Warmup Iteration   4: 2016,935 ops/ms
+# Warmup Iteration   5: 2052,170 ops/ms
+# Warmup Iteration   6: 2112,537 ops/ms
+# Warmup Iteration   7: 2113,749 ops/ms
+# Warmup Iteration   8: 2101,205 ops/ms
+# Warmup Iteration   9: 2020,053 ops/ms
+# Warmup Iteration  10: 2027,447 ops/ms
+Iteration   1: 2024,974 ops/ms
+                 "rrwlReads": 3,475 ops/ms (1 threads)
+                 "rrwlWrites": 2021,499 ops/ms (19 threads)
+
+Iteration   2: 2030,791 ops/ms
+                 "rrwlReads": 3,484 ops/ms (1 threads)
+                 "rrwlWrites": 2027,307 ops/ms (19 threads)
+
+Iteration   3: 2075,283 ops/ms
+                 "rrwlReads": 3,346 ops/ms (1 threads)
+                 "rrwlWrites": 2071,937 ops/ms (19 threads)
+
+Iteration   4: 2034,289 ops/ms
+                 "rrwlReads": 3,413 ops/ms (1 threads)
+                 "rrwlWrites": 2030,876 ops/ms (19 threads)
+
+Iteration   5: 2088,754 ops/ms
+                 "rrwlReads": 3,544 ops/ms (1 threads)
+                 "rrwlWrites": 2085,209 ops/ms (19 threads)
+
+Iteration   6: 2142,468 ops/ms
+                 "rrwlReads": 3,474 ops/ms (1 threads)
+                 "rrwlWrites": 2138,994 ops/ms (19 threads)
+
+Iteration   7: 2006,601 ops/ms
+                 "rrwlReads": 3,512 ops/ms (1 threads)
+                 "rrwlWrites": 2003,088 ops/ms (19 threads)
+
+Iteration   8: 2035,875 ops/ms
+                 "rrwlReads": 3,448 ops/ms (1 threads)
+                 "rrwlWrites": 2032,427 ops/ms (19 threads)
+
+Iteration   9: 2091,363 ops/ms
+                 "rrwlReads": 3,428 ops/ms (1 threads)
+                 "rrwlWrites": 2087,934 ops/ms (19 threads)
+
+Iteration  10: 2094,695 ops/ms
+                 "rrwlReads": 3,445 ops/ms (1 threads)
+                 "rrwlWrites": 2091,249 ops/ms (19 threads)
+
+
+Result : 2062,509 ±(99.9%) 64,064 ops/ms
+  Statistics: (min, avg, max) = (2006,601, 2062,509, 2142,468), stdev = 42,374
+  Confidence interval (99.9%): [1998,445, 2126,573]
+
+Result "rrwlReads": 3,457 ±(99.9%) 0,083 ops/ms
+  Statistics: (min, avg, max) = (3,346, 3,457, 3,544), stdev = 0,055
+  Confidence interval (99.9%): [3,374, 3,541]
+
+Result "rrwlWrites": 2059,052 ±(99.9%) 64,072 ops/ms
+  Statistics: (min, avg, max) = (2003,088, 2059,052, 2138,994), stdev = 42,380
+  Confidence interval (99.9%): [1994,980, 2123,124]
+
+
+# Run progress: 71,43% complete, ETA 00:10:45
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 1 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Stamped
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 254,843 ops/ms
+# Warmup Iteration   2: 311,025 ops/ms
+# Warmup Iteration   3: 282,565 ops/ms
+# Warmup Iteration   4: 288,027 ops/ms
+# Warmup Iteration   5: 296,320 ops/ms
+# Warmup Iteration   6: 295,154 ops/ms
+# Warmup Iteration   7: 281,230 ops/ms
+# Warmup Iteration   8: 298,714 ops/ms
+# Warmup Iteration   9: 301,264 ops/ms
+# Warmup Iteration  10: 295,628 ops/ms
+Iteration   1: 293,477 ops/ms
+                 "stReads": 167,457 ops/ms (1 threads)
+                 "stWrites": 126,020 ops/ms (19 threads)
+
+Iteration   2: 300,718 ops/ms
+                 "stReads": 161,975 ops/ms (1 threads)
+                 "stWrites": 138,743 ops/ms (19 threads)
+
+Iteration   3: 293,219 ops/ms
+                 "stReads": 168,782 ops/ms (1 threads)
+                 "stWrites": 124,437 ops/ms (19 threads)
+
+Iteration   4: 328,114 ops/ms
+                 "stReads": 191,132 ops/ms (1 threads)
+                 "stWrites": 136,982 ops/ms (19 threads)
+
+Iteration   5: 309,312 ops/ms
+                 "stReads": 172,046 ops/ms (1 threads)
+                 "stWrites": 137,266 ops/ms (19 threads)
+
+Iteration   6: 289,945 ops/ms
+                 "stReads": 167,481 ops/ms (1 threads)
+                 "stWrites": 122,464 ops/ms (19 threads)
+
+Iteration   7: 303,683 ops/ms
+                 "stReads": 164,717 ops/ms (1 threads)
+                 "stWrites": 138,966 ops/ms (19 threads)
+
+Iteration   8: 309,693 ops/ms
+                 "stReads": 171,441 ops/ms (1 threads)
+                 "stWrites": 138,252 ops/ms (19 threads)
+
+Iteration   9: 275,661 ops/ms
+                 "stReads": 148,441 ops/ms (1 threads)
+                 "stWrites": 127,220 ops/ms (19 threads)
+
+Iteration  10: 332,739 ops/ms
+                 "stReads": 193,951 ops/ms (1 threads)
+                 "stWrites": 138,788 ops/ms (19 threads)
+
+
+Result : 303,656 ±(99.9%) 26,212 ops/ms
+  Statistics: (min, avg, max) = (275,661, 303,656, 332,739), stdev = 17,338
+  Confidence interval (99.9%): [277,444, 329,868]
+
+Result "stReads": 170,742 ±(99.9%) 20,110 ops/ms
+  Statistics: (min, avg, max) = (148,441, 170,742, 193,951), stdev = 13,301
+  Confidence interval (99.9%): [150,633, 190,852]
+
+Result "stWrites": 132,914 ±(99.9%) 10,451 ops/ms
+  Statistics: (min, avg, max) = (122,464, 132,914, 138,966), stdev = 6,913
+  Confidence interval (99.9%): [122,462, 143,365]
+
+
+# Run progress: 74,29% complete, ETA 00:09:41
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 2 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Stamped
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 299,494 ops/ms
+# Warmup Iteration   2: 292,077 ops/ms
+# Warmup Iteration   3: 323,417 ops/ms
+# Warmup Iteration   4: 318,248 ops/ms
+# Warmup Iteration   5: 306,713 ops/ms
+# Warmup Iteration   6: 297,033 ops/ms
+# Warmup Iteration   7: 342,500 ops/ms
+# Warmup Iteration   8: 302,524 ops/ms
+# Warmup Iteration   9: 336,153 ops/ms
+# Warmup Iteration  10: 302,428 ops/ms
+Iteration   1: 305,105 ops/ms
+                 "stReads": 165,907 ops/ms (1 threads)
+                 "stWrites": 139,198 ops/ms (19 threads)
+
+Iteration   2: 332,196 ops/ms
+                 "stReads": 192,666 ops/ms (1 threads)
+                 "stWrites": 139,530 ops/ms (19 threads)
+
+Iteration   3: 303,164 ops/ms
+                 "stReads": 161,512 ops/ms (1 threads)
+                 "stWrites": 141,652 ops/ms (19 threads)
+
+Iteration   4: 297,673 ops/ms
+                 "stReads": 157,289 ops/ms (1 threads)
+                 "stWrites": 140,384 ops/ms (19 threads)
+
+Iteration   5: 334,050 ops/ms
+                 "stReads": 195,124 ops/ms (1 threads)
+                 "stWrites": 138,925 ops/ms (19 threads)
+
+Iteration   6: 336,544 ops/ms
+                 "stReads": 195,818 ops/ms (1 threads)
+                 "stWrites": 140,726 ops/ms (19 threads)
+
+Iteration   7: 313,761 ops/ms
+                 "stReads": 172,525 ops/ms (1 threads)
+                 "stWrites": 141,236 ops/ms (19 threads)
+
+Iteration   8: 326,183 ops/ms
+                 "stReads": 186,175 ops/ms (1 threads)
+                 "stWrites": 140,008 ops/ms (19 threads)
+
+Iteration   9: 304,527 ops/ms
+                 "stReads": 164,498 ops/ms (1 threads)
+                 "stWrites": 140,030 ops/ms (19 threads)
+
+Iteration  10: 329,275 ops/ms
+                 "stReads": 189,926 ops/ms (1 threads)
+                 "stWrites": 139,349 ops/ms (19 threads)
+
+
+Result : 318,248 ±(99.9%) 22,512 ops/ms
+  Statistics: (min, avg, max) = (297,673, 318,248, 336,544), stdev = 14,890
+  Confidence interval (99.9%): [295,736, 340,760]
+
+Result "stReads": 178,144 ±(99.9%) 23,061 ops/ms
+  Statistics: (min, avg, max) = (157,289, 178,144, 195,818), stdev = 15,253
+  Confidence interval (99.9%): [155,083, 201,205]
+
+Result "stWrites": 140,104 ±(99.9%) 1,359 ops/ms
+  Statistics: (min, avg, max) = (138,925, 140,104, 141,652), stdev = 0,899
+  Confidence interval (99.9%): [138,745, 141,462]
+
+
+# Run progress: 77,14% complete, ETA 00:08:36
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 3 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Stamped
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 274,941 ops/ms
+# Warmup Iteration   2: 273,676 ops/ms
+# Warmup Iteration   3: 299,033 ops/ms
+# Warmup Iteration   4: 286,427 ops/ms
+# Warmup Iteration   5: 283,369 ops/ms
+# Warmup Iteration   6: 313,688 ops/ms
+# Warmup Iteration   7: 274,724 ops/ms
+# Warmup Iteration   8: 292,854 ops/ms
+# Warmup Iteration   9: 299,522 ops/ms
+# Warmup Iteration  10: 332,281 ops/ms
+Iteration   1: 279,736 ops/ms
+                 "stReads": 152,186 ops/ms (1 threads)
+                 "stWrites": 127,550 ops/ms (19 threads)
+
+Iteration   2: 292,626 ops/ms
+                 "stReads": 154,023 ops/ms (1 threads)
+                 "stWrites": 138,603 ops/ms (19 threads)
+
+Iteration   3: 284,681 ops/ms
+                 "stReads": 159,586 ops/ms (1 threads)
+                 "stWrites": 125,095 ops/ms (19 threads)
+
+Iteration   4: 295,962 ops/ms
+                 "stReads": 156,295 ops/ms (1 threads)
+                 "stWrites": 139,668 ops/ms (19 threads)
+
+Iteration   5: 292,855 ops/ms
+                 "stReads": 154,653 ops/ms (1 threads)
+                 "stWrites": 138,202 ops/ms (19 threads)
+
+Iteration   6: 262,454 ops/ms
+                 "stReads": 139,393 ops/ms (1 threads)
+                 "stWrites": 123,062 ops/ms (19 threads)
+
+Iteration   7: 293,438 ops/ms
+                 "stReads": 155,188 ops/ms (1 threads)
+                 "stWrites": 138,251 ops/ms (19 threads)
+
+Iteration   8: 313,184 ops/ms
+                 "stReads": 174,991 ops/ms (1 threads)
+                 "stWrites": 138,193 ops/ms (19 threads)
+
+Iteration   9: 266,975 ops/ms
+                 "stReads": 140,896 ops/ms (1 threads)
+                 "stWrites": 126,079 ops/ms (19 threads)
+
+Iteration  10: 313,267 ops/ms
+                 "stReads": 175,310 ops/ms (1 threads)
+                 "stWrites": 137,957 ops/ms (19 threads)
+
+
+Result : 289,518 ±(99.9%) 25,506 ops/ms
+  Statistics: (min, avg, max) = (262,454, 289,518, 313,267), stdev = 16,870
+  Confidence interval (99.9%): [264,012, 315,024]
+
+Result "stReads": 156,252 ±(99.9%) 17,964 ops/ms
+  Statistics: (min, avg, max) = (139,393, 156,252, 175,310), stdev = 11,882
+  Confidence interval (99.9%): [138,288, 174,216]
+
+Result "stWrites": 133,266 ±(99.9%) 10,330 ops/ms
+  Statistics: (min, avg, max) = (123,062, 133,266, 139,668), stdev = 6,833
+  Confidence interval (99.9%): [122,936, 143,596]
+
+
+# Run progress: 80,00% complete, ETA 00:07:32
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 4 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Stamped
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 281,368 ops/ms
+# Warmup Iteration   2: 301,354 ops/ms
+# Warmup Iteration   3: 320,492 ops/ms
+# Warmup Iteration   4: 290,213 ops/ms
+# Warmup Iteration   5: 298,074 ops/ms
+# Warmup Iteration   6: 313,073 ops/ms
+# Warmup Iteration   7: 281,292 ops/ms
+# Warmup Iteration   8: 293,629 ops/ms
+# Warmup Iteration   9: 311,202 ops/ms
+# Warmup Iteration  10: 313,009 ops/ms
+Iteration   1: 281,817 ops/ms
+                 "stReads": 153,998 ops/ms (1 threads)
+                 "stWrites": 127,819 ops/ms (19 threads)
+
+Iteration   2: 293,624 ops/ms
+                 "stReads": 154,301 ops/ms (1 threads)
+                 "stWrites": 139,323 ops/ms (19 threads)
+
+Iteration   3: 293,348 ops/ms
+                 "stReads": 166,838 ops/ms (1 threads)
+                 "stWrites": 126,509 ops/ms (19 threads)
+
+Iteration   4: 317,067 ops/ms
+                 "stReads": 178,164 ops/ms (1 threads)
+                 "stWrites": 138,903 ops/ms (19 threads)
+
+Iteration   5: 317,508 ops/ms
+                 "stReads": 178,336 ops/ms (1 threads)
+                 "stWrites": 139,172 ops/ms (19 threads)
+
+Iteration   6: 272,851 ops/ms
+                 "stReads": 148,555 ops/ms (1 threads)
+                 "stWrites": 124,295 ops/ms (19 threads)
+
+Iteration   7: 320,219 ops/ms
+                 "stReads": 179,763 ops/ms (1 threads)
+                 "stWrites": 140,456 ops/ms (19 threads)
+
+Iteration   8: 298,234 ops/ms
+                 "stReads": 157,702 ops/ms (1 threads)
+                 "stWrites": 140,532 ops/ms (19 threads)
+
+Iteration   9: 292,523 ops/ms
+                 "stReads": 165,939 ops/ms (1 threads)
+                 "stWrites": 126,584 ops/ms (19 threads)
+
+Iteration  10: 291,957 ops/ms
+                 "stReads": 152,834 ops/ms (1 threads)
+                 "stWrites": 139,123 ops/ms (19 threads)
+
+
+Result : 297,915 ±(99.9%) 23,848 ops/ms
+  Statistics: (min, avg, max) = (272,851, 297,915, 320,219), stdev = 15,774
+  Confidence interval (99.9%): [274,066, 321,763]
+
+Result "stReads": 163,643 ±(99.9%) 17,904 ops/ms
+  Statistics: (min, avg, max) = (148,555, 163,643, 179,763), stdev = 11,842
+  Confidence interval (99.9%): [145,739, 181,547]
+
+Result "stWrites": 134,272 ±(99.9%) 10,480 ops/ms
+  Statistics: (min, avg, max) = (124,295, 134,272, 140,532), stdev = 6,932
+  Confidence interval (99.9%): [123,791, 144,752]
+
+
+# Run progress: 82,86% complete, ETA 00:06:27
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 5 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Stamped
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 332,793 ops/ms
+# Warmup Iteration   2: 279,856 ops/ms
+# Warmup Iteration   3: 311,483 ops/ms
+# Warmup Iteration   4: 303,425 ops/ms
+# Warmup Iteration   5: 291,409 ops/ms
+# Warmup Iteration   6: 303,285 ops/ms
+# Warmup Iteration   7: 323,376 ops/ms
+# Warmup Iteration   8: 285,422 ops/ms
+# Warmup Iteration   9: 289,893 ops/ms
+# Warmup Iteration  10: 266,470 ops/ms
+Iteration   1: 302,529 ops/ms
+                 "stReads": 160,997 ops/ms (1 threads)
+                 "stWrites": 141,532 ops/ms (19 threads)
+
+Iteration   2: 286,332 ops/ms
+                 "stReads": 159,857 ops/ms (1 threads)
+                 "stWrites": 126,475 ops/ms (19 threads)
+
+Iteration   3: 297,024 ops/ms
+                 "stReads": 156,593 ops/ms (1 threads)
+                 "stWrites": 140,431 ops/ms (19 threads)
+
+Iteration   4: 307,880 ops/ms
+                 "stReads": 167,507 ops/ms (1 threads)
+                 "stWrites": 140,373 ops/ms (19 threads)
+
+Iteration   5: 292,041 ops/ms
+                 "stReads": 167,081 ops/ms (1 threads)
+                 "stWrites": 124,960 ops/ms (19 threads)
+
+Iteration   6: 305,413 ops/ms
+                 "stReads": 165,072 ops/ms (1 threads)
+                 "stWrites": 140,340 ops/ms (19 threads)
+
+Iteration   7: 323,786 ops/ms
+                 "stReads": 184,115 ops/ms (1 threads)
+                 "stWrites": 139,672 ops/ms (19 threads)
+
+Iteration   8: 260,429 ops/ms
+                 "stReads": 138,833 ops/ms (1 threads)
+                 "stWrites": 121,596 ops/ms (19 threads)
+
+Iteration   9: 303,878 ops/ms
+                 "stReads": 163,998 ops/ms (1 threads)
+                 "stWrites": 139,880 ops/ms (19 threads)
+
+Iteration  10: 292,654 ops/ms
+                 "stReads": 152,363 ops/ms (1 threads)
+                 "stWrites": 140,291 ops/ms (19 threads)
+
+
+Result : 297,197 ±(99.9%) 25,091 ops/ms
+  Statistics: (min, avg, max) = (260,429, 297,197, 323,787), stdev = 16,596
+  Confidence interval (99.9%): [272,106, 322,288]
+
+Result "stReads": 161,642 ±(99.9%) 17,615 ops/ms
+  Statistics: (min, avg, max) = (138,833, 161,642, 184,115), stdev = 11,651
+  Confidence interval (99.9%): [144,026, 179,257]
+
+Result "stWrites": 135,555 ±(99.9%) 11,854 ops/ms
+  Statistics: (min, avg, max) = (121,596, 135,555, 141,532), stdev = 7,840
+  Confidence interval (99.9%): [123,701, 147,409]
+
+
+# Run progress: 85,71% complete, ETA 00:05:22
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 1 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Synchronized
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 2253,416 ops/ms
+# Warmup Iteration   2: 2082,707 ops/ms
+# Warmup Iteration   3: 2240,199 ops/ms
+# Warmup Iteration   4: 2207,032 ops/ms
+# Warmup Iteration   5: 2207,581 ops/ms
+# Warmup Iteration   6: 2231,954 ops/ms
+# Warmup Iteration   7: 2335,957 ops/ms
+# Warmup Iteration   8: 2355,930 ops/ms
+# Warmup Iteration   9: 2375,155 ops/ms
+# Warmup Iteration  10: 2400,397 ops/ms
+Iteration   1: 2327,223 ops/ms
+                 "syReads": 241,960 ops/ms (1 threads)
+                 "syWrites": 2085,263 ops/ms (19 threads)
+
+Iteration   2: 2295,967 ops/ms
+                 "syReads": 220,143 ops/ms (1 threads)
+                 "syWrites": 2075,824 ops/ms (19 threads)
+
+Iteration   3: 2258,676 ops/ms
+                 "syReads": 307,817 ops/ms (1 threads)
+                 "syWrites": 1950,859 ops/ms (19 threads)
+
+Iteration   4: 2310,635 ops/ms
+                 "syReads": 185,391 ops/ms (1 threads)
+                 "syWrites": 2125,244 ops/ms (19 threads)
+
+Iteration   5: 2256,577 ops/ms
+                 "syReads": 210,063 ops/ms (1 threads)
+                 "syWrites": 2046,513 ops/ms (19 threads)
+
+Iteration   6: 2300,120 ops/ms
+                 "syReads": 254,257 ops/ms (1 threads)
+                 "syWrites": 2045,863 ops/ms (19 threads)
+
+Iteration   7: 2288,856 ops/ms
+                 "syReads": 305,329 ops/ms (1 threads)
+                 "syWrites": 1983,527 ops/ms (19 threads)
+
+Iteration   8: 2261,161 ops/ms
+                 "syReads": 302,912 ops/ms (1 threads)
+                 "syWrites": 1958,249 ops/ms (19 threads)
+
+Iteration   9: 2336,196 ops/ms
+                 "syReads": 233,097 ops/ms (1 threads)
+                 "syWrites": 2103,099 ops/ms (19 threads)
+
+Iteration  10: 2287,168 ops/ms
+                 "syReads": 189,927 ops/ms (1 threads)
+                 "syWrites": 2097,241 ops/ms (19 threads)
+
+
+Result : 2292,258 ±(99.9%) 42,079 ops/ms
+  Statistics: (min, avg, max) = (2256,577, 2292,258, 2336,196), stdev = 27,832
+  Confidence interval (99.9%): [2250,179, 2334,337]
+
+Result "syReads": 245,090 ±(99.9%) 70,555 ops/ms
+  Statistics: (min, avg, max) = (185,391, 245,090, 307,817), stdev = 46,667
+  Confidence interval (99.9%): [174,535, 315,644]
+
+Result "syWrites": 2047,168 ±(99.9%) 94,601 ops/ms
+  Statistics: (min, avg, max) = (1950,859, 2047,168, 2125,244), stdev = 62,573
+  Confidence interval (99.9%): [1952,567, 2141,769]
+
+
+# Run progress: 88,57% complete, ETA 00:04:18
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 2 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Synchronized
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 2297,805 ops/ms
+# Warmup Iteration   2: 2168,821 ops/ms
+# Warmup Iteration   3: 2233,924 ops/ms
+# Warmup Iteration   4: 2281,273 ops/ms
+# Warmup Iteration   5: 2456,878 ops/ms
+# Warmup Iteration   6: 2276,271 ops/ms
+# Warmup Iteration   7: 2325,392 ops/ms
+# Warmup Iteration   8: 2272,183 ops/ms
+# Warmup Iteration   9: 2041,098 ops/ms
+# Warmup Iteration  10: 2010,156 ops/ms
+Iteration   1: 2136,244 ops/ms
+                 "syReads": 332,897 ops/ms (1 threads)
+                 "syWrites": 1803,347 ops/ms (19 threads)
+
+Iteration   2: 2046,297 ops/ms
+                 "syReads": 245,932 ops/ms (1 threads)
+                 "syWrites": 1800,365 ops/ms (19 threads)
+
+Iteration   3: 2020,927 ops/ms
+                 "syReads": 252,929 ops/ms (1 threads)
+                 "syWrites": 1767,998 ops/ms (19 threads)
+
+Iteration   4: 2190,907 ops/ms
+                 "syReads": 321,906 ops/ms (1 threads)
+                 "syWrites": 1869,001 ops/ms (19 threads)
+
+Iteration   5: 2017,040 ops/ms
+                 "syReads": 297,452 ops/ms (1 threads)
+                 "syWrites": 1719,588 ops/ms (19 threads)
+
+Iteration   6: 2068,725 ops/ms
+                 "syReads": 270,207 ops/ms (1 threads)
+                 "syWrites": 1798,518 ops/ms (19 threads)
+
+Iteration   7: 2011,277 ops/ms
+                 "syReads": 246,675 ops/ms (1 threads)
+                 "syWrites": 1764,602 ops/ms (19 threads)
+
+Iteration   8: 2096,984 ops/ms
+                 "syReads": 228,914 ops/ms (1 threads)
+                 "syWrites": 1868,070 ops/ms (19 threads)
+
+Iteration   9: 2102,232 ops/ms
+                 "syReads": 318,997 ops/ms (1 threads)
+                 "syWrites": 1783,235 ops/ms (19 threads)
+
+Iteration  10: 2050,070 ops/ms
+                 "syReads": 250,980 ops/ms (1 threads)
+                 "syWrites": 1799,090 ops/ms (19 threads)
+
+
+Result : 2074,071 ±(99.9%) 87,621 ops/ms
+  Statistics: (min, avg, max) = (2011,277, 2074,071, 2190,907), stdev = 57,956
+  Confidence interval (99.9%): [1986,449, 2161,692]
+
+Result "syReads": 276,689 ±(99.9%) 57,064 ops/ms
+  Statistics: (min, avg, max) = (228,914, 276,689, 332,897), stdev = 37,744
+  Confidence interval (99.9%): [219,625, 333,753]
+
+Result "syWrites": 1797,382 ±(99.9%) 68,294 ops/ms
+  Statistics: (min, avg, max) = (1719,588, 1797,382, 1869,001), stdev = 45,172
+  Confidence interval (99.9%): [1729,088, 1865,676]
+
+
+# Run progress: 91,43% complete, ETA 00:03:13
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 3 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Synchronized
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 2301,128 ops/ms
+# Warmup Iteration   2: 2219,972 ops/ms
+# Warmup Iteration   3: 2191,701 ops/ms
+# Warmup Iteration   4: 2313,596 ops/ms
+# Warmup Iteration   5: 2261,137 ops/ms
+# Warmup Iteration   6: 2265,479 ops/ms
+# Warmup Iteration   7: 2211,104 ops/ms
+# Warmup Iteration   8: 2195,240 ops/ms
+# Warmup Iteration   9: 2158,644 ops/ms
+# Warmup Iteration  10: 2194,926 ops/ms
+Iteration   1: 2085,850 ops/ms
+                 "syReads": 221,511 ops/ms (1 threads)
+                 "syWrites": 1864,339 ops/ms (19 threads)
+
+Iteration   2: 2188,726 ops/ms
+                 "syReads": 248,000 ops/ms (1 threads)
+                 "syWrites": 1940,726 ops/ms (19 threads)
+
+Iteration   3: 2145,845 ops/ms
+                 "syReads": 224,855 ops/ms (1 threads)
+                 "syWrites": 1920,990 ops/ms (19 threads)
+
+Iteration   4: 2123,305 ops/ms
+                 "syReads": 185,210 ops/ms (1 threads)
+                 "syWrites": 1938,095 ops/ms (19 threads)
+
+Iteration   5: 2103,873 ops/ms
+                 "syReads": 245,922 ops/ms (1 threads)
+                 "syWrites": 1857,952 ops/ms (19 threads)
+
+Iteration   6: 2199,210 ops/ms
+                 "syReads": 279,416 ops/ms (1 threads)
+                 "syWrites": 1919,794 ops/ms (19 threads)
+
+Iteration   7: 2211,621 ops/ms
+                 "syReads": 219,891 ops/ms (1 threads)
+                 "syWrites": 1991,730 ops/ms (19 threads)
+
+Iteration   8: 2184,298 ops/ms
+                 "syReads": 323,056 ops/ms (1 threads)
+                 "syWrites": 1861,242 ops/ms (19 threads)
+
+Iteration   9: 2169,239 ops/ms
+                 "syReads": 219,036 ops/ms (1 threads)
+                 "syWrites": 1950,203 ops/ms (19 threads)
+
+Iteration  10: 2258,290 ops/ms
+                 "syReads": 277,553 ops/ms (1 threads)
+                 "syWrites": 1980,737 ops/ms (19 threads)
+
+
+Result : 2167,026 ±(99.9%) 79,787 ops/ms
+  Statistics: (min, avg, max) = (2085,850, 2167,026, 2258,290), stdev = 52,774
+  Confidence interval (99.9%): [2087,239, 2246,812]
+
+Result "syReads": 244,445 ±(99.9%) 60,012 ops/ms
+  Statistics: (min, avg, max) = (185,210, 244,445, 323,056), stdev = 39,694
+  Confidence interval (99.9%): [184,433, 304,457]
+
+Result "syWrites": 1922,581 ±(99.9%) 72,748 ops/ms
+  Statistics: (min, avg, max) = (1857,952, 1922,581, 1991,730), stdev = 48,118
+  Confidence interval (99.9%): [1849,833, 1995,329]
+
+
+# Run progress: 94,29% complete, ETA 00:02:09
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 4 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Synchronized
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 1759,607 ops/ms
+# Warmup Iteration   2: 1700,459 ops/ms
+# Warmup Iteration   3: 1944,753 ops/ms
+# Warmup Iteration   4: 1917,695 ops/ms
+# Warmup Iteration   5: 1887,831 ops/ms
+# Warmup Iteration   6: 1870,941 ops/ms
+# Warmup Iteration   7: 2054,280 ops/ms
+# Warmup Iteration   8: 2073,799 ops/ms
+# Warmup Iteration   9: 2075,224 ops/ms
+# Warmup Iteration  10: 2102,785 ops/ms
+Iteration   1: 2124,073 ops/ms
+                 "syReads": 392,349 ops/ms (1 threads)
+                 "syWrites": 1731,725 ops/ms (19 threads)
+
+Iteration   2: 2060,672 ops/ms
+                 "syReads": 337,412 ops/ms (1 threads)
+                 "syWrites": 1723,261 ops/ms (19 threads)
+
+Iteration   3: 2078,637 ops/ms
+                 "syReads": 382,648 ops/ms (1 threads)
+                 "syWrites": 1695,989 ops/ms (19 threads)
+
+Iteration   4: 2089,780 ops/ms
+                 "syReads": 339,453 ops/ms (1 threads)
+                 "syWrites": 1750,327 ops/ms (19 threads)
+
+Iteration   5: 2162,646 ops/ms
+                 "syReads": 437,617 ops/ms (1 threads)
+                 "syWrites": 1725,029 ops/ms (19 threads)
+
+Iteration   6: 2192,447 ops/ms
+                 "syReads": 352,099 ops/ms (1 threads)
+                 "syWrites": 1840,348 ops/ms (19 threads)
+
+Iteration   7: 2184,902 ops/ms
+                 "syReads": 405,008 ops/ms (1 threads)
+                 "syWrites": 1779,894 ops/ms (19 threads)
+
+Iteration   8: 2109,466 ops/ms
+                 "syReads": 279,095 ops/ms (1 threads)
+                 "syWrites": 1830,371 ops/ms (19 threads)
+
+Iteration   9: 2132,871 ops/ms
+                 "syReads": 446,049 ops/ms (1 threads)
+                 "syWrites": 1686,822 ops/ms (19 threads)
+
+Iteration  10: 2087,247 ops/ms
+                 "syReads": 341,026 ops/ms (1 threads)
+                 "syWrites": 1746,222 ops/ms (19 threads)
+
+
+Result : 2122,274 ±(99.9%) 68,984 ops/ms
+  Statistics: (min, avg, max) = (2060,672, 2122,274, 2192,447), stdev = 45,629
+  Confidence interval (99.9%): [2053,290, 2191,258]
+
+Result "syReads": 371,275 ±(99.9%) 77,489 ops/ms
+  Statistics: (min, avg, max) = (279,095, 371,275, 446,049), stdev = 51,254
+  Confidence interval (99.9%): [293,786, 448,765]
+
+Result "syWrites": 1750,999 ±(99.9%) 78,237 ops/ms
+  Statistics: (min, avg, max) = (1686,822, 1750,999, 1840,348), stdev = 51,749
+  Confidence interval (99.9%): [1672,762, 1829,235]
+
+
+# Run progress: 97,14% complete, ETA 00:01:04
+# VM invoker: /opt/jdk1.8.0_05/jre/bin/java
+# VM options: -Xloggc:19-writers-per-reader-20-threads-gc.log -XX:+PrintGCDetails -XX:+PrintTenuringDistribution
+# Fork: 5 of 5
+# Warmup: 10 iterations, 3 s each
+# Measurement: 10 iterations, 3 s each
+# Threads: 20 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.pingtimeout.locksbenchmark.LocksBenchmark.Synchronized
+# Parameters: (consumedCPU = 20)
+# Warmup Iteration   1: 2226,141 ops/ms
+# Warmup Iteration   2: 2084,501 ops/ms
+# Warmup Iteration   3: 2173,345 ops/ms
+# Warmup Iteration   4: 2228,312 ops/ms
+# Warmup Iteration   5: 2289,877 ops/ms
+# Warmup Iteration   6: 2246,539 ops/ms
+# Warmup Iteration   7: 2286,701 ops/ms
+# Warmup Iteration   8: 2145,207 ops/ms
+# Warmup Iteration   9: 2158,360 ops/ms
+# Warmup Iteration  10: 2215,730 ops/ms
+Iteration   1: 2195,351 ops/ms
+                 "syReads": 474,996 ops/ms (1 threads)
+                 "syWrites": 1720,354 ops/ms (19 threads)
+
+Iteration   2: 2181,211 ops/ms
+                 "syReads": 404,361 ops/ms (1 threads)
+                 "syWrites": 1776,850 ops/ms (19 threads)
+
+Iteration   3: 2247,260 ops/ms
+                 "syReads": 432,036 ops/ms (1 threads)
+                 "syWrites": 1815,224 ops/ms (19 threads)
+
+Iteration   4: 2237,012 ops/ms
+                 "syReads": 408,418 ops/ms (1 threads)
+                 "syWrites": 1828,593 ops/ms (19 threads)
+
+Iteration   5: 2172,932 ops/ms
+                 "syReads": 336,032 ops/ms (1 threads)
+                 "syWrites": 1836,900 ops/ms (19 threads)
+
+Iteration   6: 2212,809 ops/ms
+                 "syReads": 498,139 ops/ms (1 threads)
+                 "syWrites": 1714,670 ops/ms (19 threads)
+
+Iteration   7: 2190,317 ops/ms
+                 "syReads": 438,322 ops/ms (1 threads)
+                 "syWrites": 1751,994 ops/ms (19 threads)
+
+Iteration   8: 2203,923 ops/ms
+                 "syReads": 374,974 ops/ms (1 threads)
+                 "syWrites": 1828,948 ops/ms (19 threads)
+
+Iteration   9: 2121,352 ops/ms
+                 "syReads": 431,458 ops/ms (1 threads)
+                 "syWrites": 1689,894 ops/ms (19 threads)
+
+Iteration  10: 2224,209 ops/ms
+                 "syReads": 497,646 ops/ms (1 threads)
+                 "syWrites": 1726,563 ops/ms (19 threads)
+
+
+Result : 2198,637 ±(99.9%) 54,597 ops/ms
+  Statistics: (min, avg, max) = (2121,352, 2198,637, 2247,260), stdev = 36,112
+  Confidence interval (99.9%): [2144,041, 2253,234]
+
+Result "syReads": 429,638 ±(99.9%) 78,556 ops/ms
+  Statistics: (min, avg, max) = (336,032, 429,638, 498,139), stdev = 51,960
+  Confidence interval (99.9%): [351,082, 508,195]
+
+Result "syWrites": 1768,999 ±(99.9%) 83,753 ops/ms
+  Statistics: (min, avg, max) = (1689,894, 1768,999, 1836,900), stdev = 55,397
+  Confidence interval (99.9%): [1685,246, 1852,752]
+
+
+Benchmark                                                (consumedCPU)   Mode   Samples         Mean   Mean error    Units
+f.p.l.LocksBenchmark.Adder                                          20  thrpt        50    65613,546     9025,150   ops/ms
+f.p.l.LocksBenchmark.Adder:adReads                                  20  thrpt        50      974,902      110,661   ops/ms
+f.p.l.LocksBenchmark.Adder:adWrites                                 20  thrpt        50    64638,644     8926,776   ops/ms
+f.p.l.LocksBenchmark.Atomic                                         20  thrpt        50    13673,501      249,307   ops/ms
+f.p.l.LocksBenchmark.Atomic:atReads                                 20  thrpt        50      834,425       55,226   ops/ms
+f.p.l.LocksBenchmark.Atomic:atWrites                                20  thrpt        50    12839,076      222,143   ops/ms
+f.p.l.LocksBenchmark.Dirty                                          20  thrpt        50    10149,818      230,098   ops/ms
+f.p.l.LocksBenchmark.Dirty:dReads                                   20  thrpt        50      843,644       42,075   ops/ms
+f.p.l.LocksBenchmark.Dirty:dWrites                                  20  thrpt        50     9306,174      198,409   ops/ms
+f.p.l.LocksBenchmark.DirtyVolatile                                  20  thrpt        50     9138,934      311,572   ops/ms
+f.p.l.LocksBenchmark.DirtyVolatile:dvReads                          20  thrpt        50     1116,253      142,033   ops/ms
+f.p.l.LocksBenchmark.DirtyVolatile:dvWrites                         20  thrpt        50     8022,681      199,671   ops/ms
+f.p.l.LocksBenchmark.ReentrantReadWriteLock                         20  thrpt        50     2070,790       36,995   ops/ms
+f.p.l.LocksBenchmark.ReentrantReadWriteLock:rrwlReads               20  thrpt        50        3,569        0,049   ops/ms
+f.p.l.LocksBenchmark.ReentrantReadWriteLock:rrwlWrites              20  thrpt        50     2067,220       36,992   ops/ms
+f.p.l.LocksBenchmark.Stamped                                        20  thrpt        50      301,307        9,106   ops/ms
+f.p.l.LocksBenchmark.Stamped:stReads                                20  thrpt        50      166,085        7,190   ops/ms
+f.p.l.LocksBenchmark.Stamped:stWrites                               20  thrpt        50      135,222        3,304   ops/ms
+f.p.l.LocksBenchmark.Synchronized                                   20  thrpt        50     2170,853       42,741   ops/ms
+f.p.l.LocksBenchmark.Synchronized:syReads                           20  thrpt        50      313,427       43,066   ops/ms
+f.p.l.LocksBenchmark.Synchronized:syWrites                          20  thrpt        50     1857,426       61,496   ops/ms
