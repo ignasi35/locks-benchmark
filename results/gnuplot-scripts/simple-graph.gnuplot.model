@@ -1,0 +1,8 @@
+set term png size 1000,800
+set xlabel "${x-label}"
+set ylabel "${y-label}"
+set title "${graph-title}"
+set grid layerdefault
+set yrange [0:]
+plot '${data-file}' using 1:${value-column}:${delta-column} with errorbars lt rgb 'green' title 'Reads', \
+     '${data-file}' using 1:${value-column}:${delta-column} with errorbars lt rgb 'red' title 'Writes'
