@@ -5,8 +5,10 @@ DATE=$1
 cd $DATE
 mkdir -p results/images/
 
-../generate-data-file.sh 24 > results/benchmark-results.data
-../generate-data-file.sh 24 | tr ' ' ';' > results/benchmark-results.csv
+../generate-writers-per-reader-data-file.sh > results/results-by-nb-of-writers.data
+../generate-writers-per-reader-data-file.sh | tr ' ' ';' > results/results-by-nb-of-writers.csv
+../generate-nb-threads-data-file.sh > results/results-by-nb-of-threads.data
+../generate-nb-threads-data-file.sh | tr ' ' ';' > results/results-by-nb-of-threads.csv
 
 cd results/
 

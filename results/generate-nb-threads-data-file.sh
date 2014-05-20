@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo -n "#"
-echo -n "nb-threads "
+echo -n "nb-writers-per-reader "
 echo -n "direct-reads direct-reads-mean-error direct-writes direct-writes-mean-error "
 echo -n "direct-volatile-reads direct-volatile-reads-mean-error direct-volatile-writes direct-volatile-writes-mean-error "
 echo -n "synchronized-reads synchronized-reads-mean-error synchronized-writes synchronized-writes-mean-error "
@@ -11,9 +11,9 @@ echo -n "adder-reads adder-reads-mean-error adder-writes adder-writes-mean-error
 echo -n "stamped-reads stamped-reads-mean-error stamped-writes stamped-writes-mean-error "
 echo ""
 
-for WRITERS_PER_READER in `seq 2 23`
+for NB_THREADS in `seq 2 2 24`
 do
-    NB_THREADS=$((WRITERS_PER_READER + 1))
+    WRITERS_PER_READER=1
     RESULTS_DIRECTORY="$WRITERS_PER_READER-writers-per-reader-$NB_THREADS-threads"
 
     echo $RESULTS_DIRECTORY
