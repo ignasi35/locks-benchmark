@@ -1,28 +1,20 @@
 /*
- * Copyright (c) 2005, 2013, Oracle and/or its affiliates. All rights reserved.
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * Copyright (c) 2014, Pierre Laporte
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER
  *
  * This code is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 only, as
- * published by the Free Software Foundation.  Oracle designates this
- * particular file as subject to the "Classpath" exception as provided
- * by Oracle in the LICENSE file that accompanied this code.
+ * under the terms of the GNU General Public License version 3 only, as
+ * published by the Free Software Foundation.
  *
  * This code is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
  * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
- * version 2 for more details (a copy is included in the LICENSE file that
- * accompanied this code).
+ * for more details.
  *
- * You should have received a copy of the GNU General Public License version
- * 2 along with this work; if not, write to the Free Software Foundation,
- * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- *
- * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA
- * or visit www.oracle.com if you need additional information or have any
- * questions.
+ * You should have received a copy of the GNU General Public License
+ * along with this work; if not, see <http://www.gnu.org/licenses/>.
  */
-
 package fr.pingtimeout.locksbenchmark;
 
 import java.util.concurrent.TimeUnit;
@@ -54,13 +46,6 @@ import org.openjdk.jmh.logic.BlackHole;
 @Threads(10)
 @State(Scope.Benchmark)
 public class LocksBenchmark {
-
-    // For 1 reader, how many writers should we have ?
-    // Here, we can assume that we have
-    // - 2400 outlets that sends a ping per minute (2400 writes per minute)
-    // - 5 display walls that updates every seconds (5 * 60 reads per minute)
-    // = 240 writers per reader
-    public static final int NUMBER_OF_WRITERS_PER_READER = 8;
 
     // Dirty adder : No-guard, invalid result
     private long dirtyAdder;
@@ -109,21 +94,21 @@ public class LocksBenchmark {
 
     // Write scenario
     // - Serial section
-    // --- Burn CPU (identify outlet metadata & counter)
-    // --- Increment outlet associated counter
+    // --- Burn CPU (identify shared data structure)
+    // --- Increment associated counter
     // - Parallel section
     // --- burn CPU (whatever)
     //
     // Read scenario
     // - Serial section
-    // --- Identify outlet (burn CPU)
-    // --- Increment associated counter
+    // --- Burn CPU (identify shared data structure)
+    // --- Read counter
 
     //------------------------------------------------------------------------
 
     @GenerateMicroBenchmark
     @Group("Dirty")
-    @GroupThreads(NUMBER_OF_WRITERS_PER_READER)
+    @GroupThreads(1)
     public void dWrites() {
         BlackHole.consumeCPU(consumedCPU);
         long currentValue = dirtyAdder;
@@ -147,7 +132,7 @@ public class LocksBenchmark {
 
     @GenerateMicroBenchmark
     @Group("DirtyVolatile")
-    @GroupThreads(NUMBER_OF_WRITERS_PER_READER)
+    @GroupThreads(1)
     public void dvWrites() {
         BlackHole.consumeCPU(consumedCPU);
         long currentValue = dirtyVolatileAdder;
@@ -171,7 +156,7 @@ public class LocksBenchmark {
 
     @GenerateMicroBenchmark
     @Group("Synchronized")
-    @GroupThreads(NUMBER_OF_WRITERS_PER_READER)
+    @GroupThreads(1)
     public void syWrites() {
         long newValue;
         synchronized (synchronizedGuard) {
@@ -199,7 +184,7 @@ public class LocksBenchmark {
 
     @GenerateMicroBenchmark
     @Group("ReentrantReadWriteLock")
-    @GroupThreads(NUMBER_OF_WRITERS_PER_READER)
+    @GroupThreads(1)
     public void rrwlWrites() {
         long newValue;
         try {
@@ -233,7 +218,7 @@ public class LocksBenchmark {
 
     @GenerateMicroBenchmark
     @Group("Atomic")
-    @GroupThreads(NUMBER_OF_WRITERS_PER_READER)
+    @GroupThreads(1)
     public void atWrites() {
         BlackHole.consumeCPU(consumedCPU);
         atomicLong.incrementAndGet();
@@ -253,7 +238,7 @@ public class LocksBenchmark {
 
     @GenerateMicroBenchmark
     @Group("Adder")
-    @GroupThreads(NUMBER_OF_WRITERS_PER_READER)
+    @GroupThreads(1)
     public void adWrites() {
         BlackHole.consumeCPU(consumedCPU);
         longAdder.add(1);
@@ -273,7 +258,7 @@ public class LocksBenchmark {
 
     @GenerateMicroBenchmark
     @Group("Stamped")
-    @GroupThreads(NUMBER_OF_WRITERS_PER_READER)
+    @GroupThreads(1)
     public long stWrites() {
         long stamp;
         long newValue;
