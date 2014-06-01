@@ -2,9 +2,10 @@ set term png size 1000,800
 set xlabel "${x-label}"
 set ylabel "${y-label}"
 set title "${graph-title}"
+set xrange [0:]
 set grid layerdefault
-plot '${data-file}' using 1:${synchronized-reads-column}:${synchronized-writes-column} with errorbars title 'Synchronized' lt rgb '#00CC00', \
-     '${data-file}' using 1:${rrwl-reads-column}:${rrwl-writes-column} with errorbars title 'ReentrantReadWriteLock' lt rgb '#CCCC00', \
-     '${data-file}' using 1:${atomiclong-reads-column}:${atomiclong-writes-column} with errorbars title 'AtomicLong' lt rgb '#CC00CC', \
-     '${data-file}' using 1:${longadder-reads-column}:${longadder-writes-column} with errorbars title 'LongAdder' lt rgb '#0000CC', \
-     '${data-file}' using 1:${stamped-reads-column}:${stamped-writes-column} with errorbars title 'StampedLock' lt rgb '#00CCCC'
+plot '${data-file}' using ${x-column}:${synchronized-column}:${synchronized-column-mean-error} with errorbars title 'Synchronized' lt rgb '#00CC00', \
+     '${data-file}' using ${x-column}:${rrwl-column}:${rrwl-column-mean-error} with errorbars title 'ReentrantReadWriteLock' lt rgb '#CCCC00', \
+     '${data-file}' using ${x-column}:${atomiclong-column}:${atomiclong-column-mean-error} with errorbars title 'AtomicLong' lt rgb '#CC00CC', \
+     '${data-file}' using ${x-column}:${longadder-column}:${longadder-column-mean-error} with errorbars title 'LongAdder' lt rgb '#0000CC', \
+     '${data-file}' using ${x-column}:${stamped-column}:${stamped-column-mean-error} with errorbars title 'StampedLock' lt rgb '#00CCCC'
